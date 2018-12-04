@@ -1,0 +1,824 @@
+.body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+}
+
+.container{
+	padding:0 15px;
+	width: 100%;
+}
+/* 
+*===================================================================================================================
+css for header
+*===================================================================================================================
+*/
+.navigation-wrapper{ 
+	padding: 15px 0;
+}
+
+.left-nav{
+	float: left;
+    width: 100%;
+    display: block;
+}
+
+.hamburger-menu{
+	margin-bottom: 5px;
+}
+
+.logo{
+	display: inline-block;
+	padding-left: 80px;
+}
+
+.right-nav{
+	float: left;;
+    width: 100%;
+}
+
+.nav{
+	display: block;
+    width: 100%;
+}
+
+.nav ul li{
+	display: inline-block;
+    text-transform: capitalize;
+	padding-right: 15px;
+	line-height: 35px;
+}
+
+.cart{
+	display: block;
+    width: 100%;
+}
+
+.cart ul li{
+	display: inline-block;
+	text-transform: capitalize;
+}
+
+.cart span{
+	background-color: #eee;
+    padding: 3px 7px;
+    border-radius: 50%;
+}
+
+.signin-btn{
+	border: 2px solid #eee;
+    border-radius: 20px;
+	padding: 5px 16px;
+	margin-left: 25px;
+}
+
+.nav ul li a,
+.cart ul li a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	
+}
+
+/* 
+*==================================================bottom-nav================================================================
+*/
+
+.bottom-nav{
+	width: 100%;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.navigation{
+	float: left;
+	font-size: 11px;
+}
+
+.navigation ul li{
+	display: inline-block;
+    text-transform: capitalize;
+    padding-right: 15px;
+}
+.navigation ul li a{
+	text-decoration: none;
+	color: #ddd;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navigation ul li.active a{
+	color: #000;
+}
+
+.search-wrapper{
+	float: left;;
+}
+
+.search-wrapper ul li{
+	display: inline;
+}
+
+.search-wrapper ul li a{
+	text-decoration: none;
+	color: #000;
+}
+
+.search-wrapper ul li:first-child{
+	padding-right: 15px;
+    font-weight: 600;
+    color: #ddd;
+}
+
+.search-wrapper input{
+	border: none;
+	padding: 10px;
+}
+
+.search-wrapper input::placeholder{
+	font-weight: 600;
+    color: #ddd;
+}
+
+/* .horizontal-divider,
+.slider-wrapper{
+	width: auto;
+} */
+/* .horizontal-divider img, */
+
+
+/* 
+*=============================================================================
+css for slider
+*=============================================================================
+*/
+
+.slider-wrapper{
+	position: relative;
+}
+
+.slider-wrapper img{
+	width: 100%;
+	height: auto;
+}
+
+.slider-caption{
+	/* max-width: 51%;
+	padding: 0 0 0 15px;
+	position: relative;
+	color: #fff;
+	top: 50%;
+	transform: translateY(-50%); */
+	max-width: 100%;
+    padding:15px;
+    /* position: absolute; */
+	color: #fff;
+	background-color: #000;
+	margin-top: -5px;
+    /* top: 50%; */
+	/* transform: translateY(-50%); */
+	text-align: center;
+}
+
+.slider-caption h1 {
+	font-size: 16px;
+    line-height: 20px;
+    font-weight: 800;
+}
+
+.slider-caption p {
+	font-size: 10px;
+    padding: 8px 0;
+    line-height: 16px;
+}
+
+.slider-caption button{
+	background-color: #3366ff;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    padding: 13px 35px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.carousel-next{
+	/* width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 100px;
+    padding: 6px;
+	top: 50%;
+	border:1Px solid #fff;
+    transform: translateY(-50%);
+	border-radius: 50%; */
+	
+	width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    padding: 6px;
+    top: 22%;
+    border: 1Px solid #fff;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.carousel-next img{
+	width: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.carousel{
+	/* position: absolute;
+	bottom: 30px;
+    left: 50%;
+	transform: translateX(-50%); */
+	position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel ul li{
+	display: inline-block;
+    width: 8px;
+    border-radius: 50%;
+    height: 8px;
+    border: 1px solid #fff;
+}
+.carousel ul li.active{
+	background-color: #fff;
+}
+
+
+/* css for bottom nav */
+
+
+
+/* .search-bar{
+	display: inline-block;
+} */
+
+
+/* 
+*===============================================================================
+css for body
+*===============================================================================
+*/
+
+.body-wrapper {
+    background-color: #ccc;
+    padding: 50px 0;
+}
+
+/* 
+==============body-navigation==================================
+*/
+
+.body-nav {
+    background: #fff;
+    line-height:42px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+
+.body-nav ul li{
+	display: inline;
+	padding: 10px 20px;
+}
+
+
+.sort-by{
+	width: 100%;
+	text-align: center;
+}
+
+.nav-middle{
+	width: 100%;
+    border-left: 1px solid #f0f2f7;
+    border-right: 1px solid #f0f2f7;
+    text-align: center;
+}
+
+.nav-middle input.lg-input {
+    width: 60%;
+    font-weight: 600;
+    padding-left: 15px;
+    color: #ccc;
+}
+
+.nav-middle input.sm-input {
+    width:24%;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.nav-middle input {
+    background-color: #f0f2f7;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.nav-middle span{
+	color: #ccc;
+}
+
+.ship-to{
+	width: 100%;
+    text-align: center;
+}
+
+.sort-by ul li,.ship-to ul li{
+	display:inline-block;
+	padding: 0 5px;
+}
+
+.sort-by ul li,
+.nav-middle ul li,
+.ship-to ul li{
+	text-transform: uppercase;
+}
+
+.sort-by ul li:first-child,
+.ship-to ul li:first-child{
+	color: #ccc;
+	padding-left: 0;
+}
+
+/*  
+========================main-body-content============================
+*/
+/* 
+*
+*=======================sidebar======================================
+*/
+
+.sidebar{
+	width: 100%;
+	float: none;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.sidebar-top, .sidebar-third {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.sidebar-top ul li {
+    padding: 15px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #f0f2f7;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+}
+.sidebar-top ul li.muted{
+	background-color: #f0f2f7;
+	color: #a1a7bd;
+	border-bottom: 1px solid #dfe4ee;
+}
+
+.sidebar-top ul li:last-child{
+	border-bottom: none;
+}
+
+.sidebar-second,.sidebar-last{
+	margin: 20px 0;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.sidebar-card .heading{
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding:15px;
+	border-bottom: 1px solid #f0f2f7;
+}
+
+.sidebar-card .content{
+	padding: 15px;
+}
+
+.sidebar-card .content ul li span{
+	float: right;
+	color: #ccc;
+	font-weight: 500;
+}
+
+.sidebar-card .content input{
+	float: left;
+}
+
+.sidebar-card .content ul li{
+	padding: 10px 0;
+}
+
+.sidebar-card .content ul li p{
+	padding-left: 15px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.sidebar-card .heading p{
+	display: inline-block;
+}
+
+.sidebar .heading span{
+	float: right;
+	font-size: 11px;
+}
+
+.sidebar-card .content .free{
+	float: left;
+	width: 50%;
+	padding:15px;
+}
+
+.sidebar-card .content .paid{
+	float: right;
+	padding:15px;
+	width: 50%;
+	border-left: 1px solid #f0f2f7;
+
+}
+
+.sidebar-last input{
+	display: inline-block;
+}
+
+.sidebar-last .content{
+	padding: 0;
+}
+
+.sidebar-last .content p{
+	display: inline-block;
+}
+
+.sidebar ul li img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar .heading span a{
+	color: #2754eb;
+}
+
+.sidebar-second img,
+.sidebar-third img,
+.sidebar-last img{
+	width: 100%;
+}
+
+
+/* 
+==================================main-content==========================
+*/
+
+.main-content{
+	width: 100%;
+	float: none;
+}
+
+.box{
+	/* float: left; */
+	/* width: 29.804597%; */
+	width: 100%;
+	/* margin-left: 30px; */
+	margin-bottom: 30px;
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.box-image img{
+	width: 100%;
+	height: auto;
+}
+
+.prod-info .item-name p{
+	margin-bottom: 10px;
+}
+
+.best-items-content span {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cccccc;
+    line-height: 20px;
+}
+/* 
+.prod-info .item-name p {
+    margin-bottom: 10px;
+} */
+
+.price p{
+	font-weight: 500;
+}
+
+.price span {
+    font-size: 14px;
+    text-decoration: line-through;
+    padding-right: 15px;
+}
+
+.rectangle {
+    float: none;
+    width: 100%;
+    background: white;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.rectangle-content{
+	padding:0 30px;
+}
+
+.rectangle-content .item-name  {
+	float: left;
+	width: 45%;
+}
+
+.rectangle-content span{
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #cccccc;
+	line-height: 20px;
+}
+
+.rectangle-item-info{
+	float: right;
+	padding: 15px 0;
+	text-align: right;
+	width: 45%;
+}
+
+.rectangle-info ul li{
+	display: inline;
+	padding-left: 20px;
+	font-size: 16px;	
+}
+
+.rectangle-item-info ul{
+	border-radius: 20px;
+	display: inline-block;
+	border: 1px solid #a9a9a9;
+}
+
+.rectangle-item-info ul li{
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.rectangle-item-info ul li:last-child{
+	border-left: 1px solid #a9a9a9;
+}
+
+.rectangle-item-info ul li{
+	padding:8px;
+	font-size: 11px;
+}
+
+.item-name{
+	padding: 15px 0;
+}
+
+.item-name p{
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 20px;
+}
+
+/* 
+*=======================================================================================
+css for pagination
+*=======================================================================================
+ */
+
+
+.pagination {
+    background: #fff;
+    padding: 15px;
+    line-height: 35px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.previous-page,.pagination-list{
+	float: left;
+}
+
+.previous-page{
+	width: 10%;
+}
+
+.pagination-list{
+	text-align: center;
+	width: 80%;
+}
+
+.pagination-list ul li{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.pagination-list ul li.current-page{
+	border-radius: 50%;
+	color: #cccccc;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 20px 40px 0px rgba(168, 172, 185, 0.62);
+		
+}
+
+.next-page{
+	float: right;
+	width: 10%;
+	text-align: right;
+}
+
+/* 
+*===========================================================================================
+css for best sellers
+*===========================================================================================
+*/
+
+
+.best-seller {
+    background: #fff;
+    text-align: center;
+    margin: 50px 0;
+    border-radius: 5px;
+}
+
+.best-seller-header {
+    padding: 20px 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #f0f2f7;
+}
+
+.best-seller-item {
+    padding-bottom: 35px;
+}
+
+/* 
+*===================================================================================================
+css for feedback section
+*===================================================================================================
+*/
+
+.feedback-section{
+	text-align: center;
+	background: #fff;
+	padding: 30px 0;
+}
+
+.feedback-header h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+}
+
+.feedback-header p {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.feedbacks {
+	float: left;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
+.name {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+
+.name p {
+    font-size: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.name span {
+    margin: 5px 0;
+    font-style: italic;
+    color: #ccc;
+    position: relative;
+    padding-left: 60px;
+}
+
+.name::before {
+    content: url(../images/user1.png);
+    position: absolute;
+}
+
+.review p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* 
+*====================================================================================================
+css for footer
+*====================================================================================================
+*/
+
+.footer{
+	background-color: #333333;
+	color: whitesmoke;
+	padding: 55px 0;
+}
+.footer-top{
+	line-height: 25px;
+	border-bottom:1px solid #525252;
+	padding-bottom: 30px;
+}
+
+.footer-logo{
+	width: 100%;
+    text-align: center;
+}
+
+.footer-nav{
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.footer-logo,.footer-nav{
+	float: left;
+}
+
+.footer-nav ul li{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+
+.footer-icon{
+	width: 100%;
+    text-align: center;
+}
+
+.footer-bottom{
+	color: #666666;
+	font-size: 13px;
+	padding: 30px 0;
+}
+
+.footer-bottom-left{
+	text-align: center;
+	width: 100%;
+	font-style: italic;
+	padding-bottom: 15px;
+}
+
+.footer-bottom-right{
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.footer-icon ul li,
+.footer-bottom-right ul li{
+	display:inline-block;
+	padding-left: 15px;
+}
+
+.footer-bottom-right ul li{
+	text-align: right
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,9 @@
+.clearfix::before,.clearfix::after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+ul li{
+	list-style-type: none;
+}
