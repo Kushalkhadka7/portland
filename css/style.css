@@ -7,6 +7,10 @@
 	padding:0 15px;
 	width: 100%;
 }
+.spacing{
+	padding: 0 15px;
+	width: 100%;
+}
 /* 
 *===================================================================================================================
 css for header
@@ -14,6 +18,7 @@ css for header
 */
 .navigation-wrapper{ 
 	padding: 15px 0;
+	border-bottom: none;
 }
 
 .left-nav{
@@ -29,6 +34,8 @@ css for header
 .logo{
 	display: inline-block;
 	padding-left: 80px;
+	/* border-left: 1px solid #f0f2f7; */
+	border-left: none;
 }
 
 .right-nav{
@@ -76,6 +83,7 @@ css for header
 	text-decoration: none;
 	color: #000;
 	font-weight: 500;
+	font-size: 14px;
 	
 }
 
@@ -102,7 +110,7 @@ css for header
 .navigation ul li a{
 	text-decoration: none;
 	color: #ddd;
-	font-weight: 500;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
@@ -115,7 +123,8 @@ css for header
 }
 
 .search-wrapper ul li{
-	display: inline;
+	display: inline-block;
+	padding-left: 30px;
 }
 
 .search-wrapper ul li a{
@@ -126,7 +135,8 @@ css for header
 .search-wrapper ul li:first-child{
 	padding-right: 15px;
     font-weight: 600;
-    color: #ddd;
+	color: #ddd;
+	border-right: 1px solid #f0f2f7;
 }
 
 .search-wrapper input{
@@ -138,12 +148,6 @@ css for header
 	font-weight: 600;
     color: #ddd;
 }
-
-/* .horizontal-divider,
-.slider-wrapper{
-	width: auto;
-} */
-/* .horizontal-divider img, */
 
 
 /* 
@@ -162,20 +166,11 @@ css for slider
 }
 
 .slider-caption{
-	/* max-width: 51%;
-	padding: 0 0 0 15px;
-	position: relative;
-	color: #fff;
-	top: 50%;
-	transform: translateY(-50%); */
 	max-width: 100%;
     padding:15px;
-    /* position: absolute; */
 	color: #fff;
 	background-color: #000;
 	margin-top: -5px;
-    /* top: 50%; */
-	/* transform: translateY(-50%); */
 	text-align: center;
 }
 
@@ -202,16 +197,6 @@ css for slider
 }
 
 .carousel-next{
-	/* width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 100px;
-    padding: 6px;
-	top: 50%;
-	border:1Px solid #fff;
-    transform: translateY(-50%);
-	border-radius: 50%; */
-	
 	width: 25px;
     height: 25px;
     position: absolute;
@@ -230,15 +215,12 @@ css for slider
 }
 
 .carousel{
-	/* position: absolute;
-	bottom: 30px;
-    left: 50%;
-	transform: translateX(-50%); */
 	position: absolute;
     top: 35%;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .carousel ul li{
 	display: inline-block;
     width: 8px;
@@ -249,16 +231,6 @@ css for slider
 .carousel ul li.active{
 	background-color: #fff;
 }
-
-
-/* css for bottom nav */
-
-
-
-/* .search-bar{
-	display: inline-block;
-} */
-
 
 /* 
 *===============================================================================
@@ -290,7 +262,6 @@ css for body
 	padding: 10px 20px;
 }
 
-
 .sort-by{
 	width: 100%;
 	text-align: center;
@@ -298,8 +269,6 @@ css for body
 
 .nav-middle{
 	width: 100%;
-    border-left: 1px solid #f0f2f7;
-    border-right: 1px solid #f0f2f7;
     text-align: center;
 }
 
@@ -317,7 +286,8 @@ css for body
 }
 
 .nav-middle input {
-    background-color: #f0f2f7;
+	background-color: #f0f2f7;
+	border: 1px solid #cccccc;
     padding: 6px;
     border-radius: 20px;
 }
@@ -348,6 +318,114 @@ css for body
 	padding-left: 0;
 }
 
+.container-checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 1;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+	border: 2px solid #eee;
+	border-radius: 5px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+    background-color: #00e2aa;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+	left: 4px;
+    top: 1px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+/* for radio button */
+
+.container-radio {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+	border: 2px solid #eee;
+    border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark-radio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark-radio:after {
+	top: 3px;
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background:#00e2aa;
+}
+
+
+
+
 /*  
 ========================main-body-content============================
 */
@@ -373,7 +451,7 @@ css for body
     text-transform: capitalize;
     border-bottom: 1px solid #f0f2f7;
     position: relative;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 .sidebar-top ul li.muted{
@@ -393,7 +471,7 @@ css for body
 }
 
 .sidebar-card .heading{
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 	padding:15px;
@@ -419,9 +497,10 @@ css for body
 }
 
 .sidebar-card .content ul li p{
-	padding-left: 15px;
 	font-weight: 500;
 	text-transform: capitalize;
+	padding-left: 30px;
+    display: inline-block;
 }
 
 .sidebar-card .heading p{
@@ -487,10 +566,7 @@ css for body
 }
 
 .box{
-	/* float: left; */
-	/* width: 29.804597%; */
 	width: 100%;
-	/* margin-left: 30px; */
 	margin-bottom: 30px;
 	display: block;
 	background-color: #fff;
@@ -515,10 +591,6 @@ css for body
     color: #cccccc;
     line-height: 20px;
 }
-/* 
-.prod-info .item-name p {
-    margin-bottom: 10px;
-} */
 
 .price p{
 	font-weight: 500;
@@ -540,7 +612,7 @@ css for body
 }
 
 .rectangle-content{
-	padding:0 30px;
+	padding:9px 30px;
 }
 
 .rectangle-content .item-name  {
@@ -560,7 +632,7 @@ css for body
 	float: right;
 	padding: 15px 0;
 	text-align: right;
-	width: 45%;
+	width: 46%;
 }
 
 .rectangle-info ul li{
@@ -637,8 +709,7 @@ css for pagination
 	border-radius: 50%;
 	color: #cccccc;
 	background-color: rgb(255, 255, 255);
-	box-shadow: 0px 20px 40px 0px rgba(168, 172, 185, 0.62);
-		
+	box-shadow: 0px 20px 40px 0px rgba(168, 172, 185, 0.62);	
 }
 
 .next-page{
@@ -814,9 +885,14 @@ css for footer
 
 
 
+.nav-middle .container-checkbox{
+	display: inline-block;
+	padding-left: 30px;
+}
 
-
-
+.nav-middle .checkmark{
+	top: 12px;
+}
 
 
 
