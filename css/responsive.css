@@ -17,8 +17,6 @@ css for tablets
 		padding: 25px 0;
 	}
 	
-	
-
 	.nav{
 		padding: 5px 0 20px 0;
 	}
@@ -100,7 +98,7 @@ css for tablets
 
 	.box:nth-child(odd){
 		margin-left: 0;
-		margin-right: 16px;
+		margin-right: 10px;
 	}
 
 	.box:nth-child(even){
@@ -115,13 +113,19 @@ css for tablets
 
 	.box.after-rect:nth-child(even){
 		margin-left: 0px;
-		margin-right: 16px;
+		margin-right: 10px;
 	}
 
 	.best-items{
 		width: 50%;
 		float: left;
 	}
+		
+	.rectangle-item-info ul li{
+		display: inline-block;
+		padding: 8px;
+	}
+
 
 }
 
@@ -136,11 +140,21 @@ css for screen larger than tablets
 		padding: 0 20px;
 	}
 	.nav{
-		padding: 5px 0;
+		padding: 20px 0;
+	}
+
+	.navigation{
+		padding-top: 0;
 	}
 	.slider-caption h1 {
 		font-size: 42px;
 		line-height: 56px;
+	}
+	.search-wrapper ul li{
+		padding-left: 30px;
+	}
+	.search-wrapper ul li:first-child{
+		border-right: 1px solid #f0f2f7;
 	}
 
 	.slider-caption p {
@@ -223,12 +237,9 @@ css for screen larger than tablets
 		width: 61%;
 		margin-left: 30px;	
 	}
-	
-	.rectangle-item-info ul li{
-		display: inline-block;
-		text-transform: uppercase;
+	.rectangle-item-info {
+		width: 46%;
 	}
-
 	.rectangle-item-info ul li:last-child{
 		border-left: 1px solid #a9a9a9;
 	}
@@ -238,7 +249,7 @@ css for screen larger than tablets
 	} 
 
 	.rectangle-item-info ul li{
-		padding:8px 9px;
+		padding:8px 8px;
 	}
 	
 	.pagination{
@@ -320,9 +331,28 @@ css for larger screens
 *==================================================================================================================
 */
 
+
+@media screen and (min-width:768px) and (max-width:992px){
+	.nav-middle{
+		text-align: initial;
+	}
+	.body-nav{
+		line-height: 40px;
+	}
+	.nav-middle input.sm-input {
+		padding-left: 8px;
+	}
+	.nav-middle .checkmark {
+		top: 12px;
+	} 
+}
+
 @media screen and (min-width:992px){
 	.container{
 		padding: 0 110px;
+	}
+	.spacing{
+		border-bottom: none;
 	}
 	.box{
 		margin-left: 30px !important;
@@ -373,6 +403,9 @@ css for larger screens
 	.slider-caption{
 		padding-left: 210px;
 	}
+	.slider-caption p{
+		font-size: 14px;
+	}
 	.bottom-nav {
 		line-height:60px;
 	}
@@ -388,15 +421,58 @@ css for larger screens
 	.spacing{
 		padding: 0;
 	}
-	/* .sidebar-card .content ul li p{
-		padding-left: 30px;
-		display: inline-block;
-	} */
+	
 }
 
 @media screen and (min-width:481px) and (max-width:578px){
 	.box:nth-child(odd) {
 		margin-left: 0;
 		margin-right: 10px;
+	}
+}
+@media screen and (min-width:992px) and (max-width:1125px){
+	.nav-middle ul{
+		text-align: initial;
+	}
+	.box{
+		width: 26.804597%;
+		margin-left: 35px !important;
+	}
+	.logo{
+		margin-left: 0;
+		padding-left: 10px;
+	}
+	.right-nav {
+		line-height: 0;
+		width: 82%;
+		margin-top: 28px;
+	}
+	.nav{
+		padding: 5px 0 5px 30px;
+		width: 67%;
+	}
+	.cart{
+		line-height: 30px;
+		width: 33%;
+	}
+	.hamburger-menu {
+		padding-right: 10px;
+	}
+	.navigation ul li {
+		padding-right: 20px;
+	}
+	.search-wrapper ul li {
+		padding-left: 0px;
+	}
+}
+@media screen and (min-width:1125px){
+	.box{
+		width: 29.804597%;
+	}
+	.box{
+		margin-left:30px; 
+	}
+	.rectangle{
+		width: 63%;
 	}
 }
