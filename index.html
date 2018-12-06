@@ -6,22 +6,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta http-equiv="X-UA-Compatible" content="ie=9">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
 	<title>Document</title>
 </head>
 
 <body class="body">
 
+	<div class="side-menu clearfix" id="sidebar">
+		<div class="image" onclick="closeNav()">
+			<img src="./images/crossarrow.png" alt="close sidebar">
+		</div>
+		<div class="menu-top">
+			<ul>
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">devices</a>
+				</li>
+				<li>
+					<a href="#">delivery & payment</a>
+				</li>
+				<li>
+					<a href="#">guarantee</a>
+				</li>
+				<li>
+					<a href="#">about us</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
 	<!-- header top navigation -->
 	<div class="spacing">
 		<div class="navigation-wrapper clearfix">
 			<div class="left-nav">
-				<img src="./images/Menu Icon.png" alt="hamburger menu" class="hamburger-menu">
+				<img src="./images/Menu Icon.png" alt="hamburger menu" class="hamburger-menu" onclick="openNav()">
 				<div class="logo">
 					<img src="./images/portland.png" alt="site logo">
 				</div>
@@ -52,7 +76,7 @@
 					<ul>
 						<li>
 							<a href="#">
-								<img src="./images/Shopping Cart Icon.png" alt=""> Cart
+								<img src="./images/Shopping Cart Icon.png" alt="shopping cart icon"> Cart
 								<span>0</span>
 							</a>
 						</li>
@@ -102,7 +126,7 @@
 					support
 				</li>
 				<li>
-					<img src="./images/Search Icon.png" alt="">
+					<img src="./images/Search Icon.png" alt="search icon">
 					<input type="text" placeholder="I'm looking for..">
 				</li>
 			</ul>
@@ -120,9 +144,9 @@
 			</ul>
 		</div>
 		<div class="carousel-next">
-			<img src="./images/Next Icon.png" alt="">
+			<img src="./images/Next Icon.png" alt="next icon">
 		</div>
-		<img src="./images/iphone.png" alt="">
+		<img src="./images/iphone.png" alt="iphone image">
 		<div class="slider-caption">
 			<h1>Iphone 6 32 Gb Black</h1>
 			<p>
@@ -178,7 +202,7 @@
 								<li>ship to:</li>
 								<li>
 									usa
-									<img src="./images/Open Icon.png" alt="">
+									<img src="./images/Open Icon.png" alt="open icon">
 								</li>
 							</ul>
 						</div>
@@ -192,15 +216,15 @@
 								<ul>
 									<li class="clearfix">
 										<p>top sales</p>
-										<img src="./images/openicon.png" alt="">
+										<img src="./images/openicon.png" alt="open icon">
 									</li>
 									<li class="clearfix">
 										<p>brand focus</p>
-										<img src="./images/openicon.png" alt="">
+										<img src="./images/openicon.png" alt="open icon">
 									</li>
 									<li class="clearfix">
 										<p>hi-tech</p>
-										<img src="./images/Open Icon.png" alt="">
+										<img src="./images/Open Icon.png" alt="open icon">
 									</li>
 									<li class="clearfix muted">
 										<p>cell phones</p>
@@ -219,11 +243,11 @@
 									</li>
 									<li class="clearfix">
 										<p>home</p>
-										<img src="./images/openicon.png" alt="">
+										<img src="./images/openicon.png" alt="open icon">
 									</li>
 									<li class="clearfix">
 										<p>sale</p>
-										<img src="./images/openicon.png" alt="">
+										<img src="./images/openicon.png" alt="open icon">
 									</li>
 								</ul>
 							</div>
@@ -253,7 +277,7 @@
 											</li>
 										</ul>
 									</div>
-									<img src="./images/available-divider.png" alt="">
+									<img src="./images/available-divider.png" alt="available-divider">
 								</div>
 								<div class="sidebar-card clearfix">
 									<div class="heading clearfix">
@@ -387,7 +411,7 @@
 						<div class="main-content clearfix">
 							<div class="box">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -406,7 +430,7 @@
 
 							<div class="box">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -425,7 +449,7 @@
 
 							<div class="box">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -444,7 +468,7 @@
 
 							<div class="box">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -462,8 +486,11 @@
 							</div>
 
 							<div class="rectangle">
+								<div class="top-price">
+									$3.99
+								</div>
 								<div class="box-image">
-									<img src="./images/jblspeaker.png" alt="">
+									<img src="./images/jblspeaker.png" alt="product">
 								</div>
 								<div class="rectangle-content clearfix">
 									<div class="item-name">
@@ -481,7 +508,7 @@
 							</div>
 							<div class="box after-rect">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -499,7 +526,7 @@
 							</div>
 							<div class="box after-rect">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -517,7 +544,7 @@
 							</div>
 							<div class="box after-rect">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -535,7 +562,7 @@
 							</div>
 							<div class="box after-rect">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -553,7 +580,7 @@
 							</div>
 							<div class="box after-rect">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -571,7 +598,7 @@
 							</div>
 							<div class="box after-rect">
 								<div class="box-image">
-									<img src="./images/product1.png" alt="">
+									<img src="./images/product1.png" alt="product">
 								</div>
 								<div class="prod-info">
 									<div class="best-items-content">
@@ -594,7 +621,7 @@
 				<!-- pagination -->
 				<div class="pagination clearfix">
 					<div class="previous-page">
-						<img src="./images/prev.png" alt="">
+						<img src="./images/prev.png" alt="pagination previous">
 					</div>
 					<div class="pagination-list">
 						<ul>
@@ -609,7 +636,7 @@
 						</ul>
 					</div>
 					<div class="next-page">
-						<img src="./images/next.png" alt="">
+						<img src="./images/next.png" alt="pagination next">
 					</div>
 				</div>
 
@@ -621,7 +648,7 @@
 					<div class="best-seller-item clearfix">
 						<div class="best-items">
 							<div class="best-items-image">
-								<img src="./images/bestproduct1.jpg" alt="">
+								<img src="./images/bestproduct1.jpg" alt="best product">
 							</div>
 							<div class="best-items-content">
 								<div class="item-name">
@@ -638,7 +665,7 @@
 						</div>
 						<div class="best-items">
 							<div class="best-items-image">
-								<img src="./images/bestproduct1.jpg" alt="">
+								<img src="./images/bestproduct1.jpg" alt="best product">
 							</div>
 							<div class="best-items-content">
 								<div class="item-name">
@@ -655,7 +682,7 @@
 						</div>
 						<div class="best-items">
 							<div class="best-items-image">
-								<img src="./images/bestproduct1.jpg" alt="">
+								<img src="./images/bestproduct1.jpg" alt="best product">
 							</div>
 							<div class="best-items-content">
 								<div class="item-name">
@@ -672,7 +699,7 @@
 						</div>
 						<div class="best-items">
 							<div class="best-items-image">
-								<img src="./images/bestproduct1.jpg" alt="">
+								<img src="./images/bestproduct1.jpg" alt="best product">
 							</div>
 							<div class="best-items-content">
 								<div class="item-name">
@@ -752,7 +779,7 @@
 				<div class="container">
 					<div class="footer-top clearfix">
 						<div class="footer-logo">
-							<img src="./images/footerlogo.png" alt="">
+							<img src="./images/footerlogo.png" alt="footer logo">
 						</div>
 						<div class="footer-nav">
 							<ul>
@@ -765,9 +792,9 @@
 						</div>
 						<div class="footer-icon clearfix">
 							<ul>
-								<li><img src="./images/Twitter Icon.png" alt=""></li>
-								<li><img src="./images/Facebook Icon.png" alt=""></li>
-								<li><img src="./images/G+ Icon.png" alt=""></li>
+								<li><img src="./images/Twitter Icon.png" alt="Twitter"></li>
+								<li><img src="./images/Facebook Icon.png" alt="Facebook"></li>
+								<li><img src="./images/G+ Icon.png" alt="google"></li>
 							</ul>
 						</div>
 
@@ -793,7 +820,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="/script.js"></script>
+	<script src="./script.js"></script>
 </body>
 
 </html>

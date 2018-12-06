@@ -8,6 +8,9 @@ css for tablets
 	body{
 		font-size: 0.87rem;
 	}
+	.left-nav{
+		padding-bottom: 0;
+	}
 
 	.logo {
 		padding-left: 20px;
@@ -18,6 +21,7 @@ css for tablets
 	}
 	
 	.nav{
+		display: block;
 		padding: 5px 0 20px 0;
 	}
 
@@ -397,6 +401,9 @@ css for larger screens
         width: 40%;
         text-align: right;
 	}
+	.search-wrapper ul li:last-child{
+		border-right: 1px solid #f0f2f7;
+	}
 	.navigation-wrapper{
 		padding: 0 110px;
 	}
@@ -420,6 +427,18 @@ css for larger screens
 	}
 	.spacing{
 		padding: 0;
+	}
+	.rectangle-content{
+		padding: 0;
+	}
+	.rectangle-content .item-name{
+		padding: 0 0 0 20px;
+	}
+	.rectangle-content .item-name p{
+		padding-top: 8px;
+	}
+	.rectangle-content .rectangle-item-info{
+		padding-right: 15px;
 	}
 	
 }

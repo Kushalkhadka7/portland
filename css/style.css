@@ -12,6 +12,45 @@
 	width: 100%;
 	border-bottom: 1px solid #ddd;
 }
+
+.side-menu{
+	height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+	background-color:#ffffff;
+    overflow-x: hidden;
+	transition: 0.5s;
+	box-shadow: 10px 3px 28px -2px rgba(0,0,0,0.75);	
+}
+.side-menu .image{
+	width: 35px;
+	padding: 9px;
+	margin: 5px 0 5px 205px;
+	cursor: pointer;
+}
+.side-menu .image img{
+	width: 100%;
+}
+.side-menu .menu-top{
+	border-top: 1px solid #ccc;
+}
+.side-menu ul li{
+	padding: 10px 0;
+}
+.side-menu ul li a{
+	margin:0 10px;
+    font-size: 16px;
+	text-transform: capitalize;
+	cursor: pointer;
+	color: black;
+	text-decoration: none;
+}
+.side-menu ul li:hover{
+	background-color: #a1a7bd;
+}
 /* 
 *===================================================================================================================
 css for header
@@ -25,17 +64,18 @@ css for header
 .left-nav{
 	float: left;
     width: 100%;
-    display: block;
+	display: block;
+	padding-bottom: 20px;
 }
 
 .hamburger-menu{
 	margin-bottom: 5px;
+	cursor: pointer;
 }
 
 .logo{
 	display: inline-block;
 	padding-left: 80px;
-	/* border-left: 1px solid #f0f2f7; */
 	border-left: none;
 }
 
@@ -45,7 +85,7 @@ css for header
 }
 
 .nav{
-	display: block;
+	display: none;
     width: 100%;
 }
 
@@ -54,6 +94,9 @@ css for header
     text-transform: capitalize;
 	padding-right: 15px;
 	line-height: 35px;
+}
+.nav ul li a:hover{
+	border-bottom: 1px solid #ccc;
 }
 
 .cart{
@@ -115,7 +158,10 @@ css for header
 	font-weight: 600;
 	text-transform: uppercase;
 }
-
+.navigation ul li a:hover {
+   border-bottom: 1px solid rgb(95, 95, 95);
+   color: rgb(95, 95, 95);
+}
 .navigation ul li.active a{
 	color: #000;
 }
@@ -137,6 +183,7 @@ css for header
 	padding-right: 15px;
     font-weight: 600;
 	color: #ddd;
+	cursor: pointer;
 }
 
 .search-wrapper input{
@@ -206,6 +253,9 @@ css for slider
     border: 1Px solid #fff;
     transform: translateY(-50%);
     border-radius: 50%;
+}
+.carousel-next:hover{
+	cursor: pointer;
 }
 
 .carousel-next img{
@@ -316,6 +366,10 @@ css for body
 .ship-to ul li:first-child{
 	color: #ccc;
 	padding-left: 0;
+}
+.sort-by ul li:last-child:hover,
+.ship-to ul li:last-child:hover{
+	cursor: pointer;
 }
 
 .container-checkbox {
@@ -464,6 +518,11 @@ css for body
 	border-bottom: none;
 }
 
+.sidebar-top ul li:hover{
+	background-color: #f0f2f7;
+	cursor: pointer;
+}
+
 .sidebar-second,.sidebar-last{
 	margin: 20px 0;
 	background: #fff;
@@ -574,6 +633,10 @@ css for body
 	padding: 30px;
 	border-radius: 5px;
 }
+.box:hover{
+	background-blend-mode: lighten;
+	cursor: pointer;
+}
 
 .box-image img{
 	width: 100%;
@@ -590,6 +653,9 @@ css for body
     font-weight: 500;
     color: #cccccc;
     line-height: 20px;
+}
+.best-items:hover{
+	cursor: pointer;
 }
 
 .price p{
@@ -609,6 +675,17 @@ css for body
     position: relative;
     border-radius: 5px;
     margin-bottom: 30px;
+}
+
+.rectangle .top-price{
+	position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
 .rectangle-content{
@@ -654,6 +731,10 @@ css for body
 	font-size: 11px;
 }
 
+.rectangle-item-info ul li:last-child:hover{
+	cursor: pointer;
+}
+
 .rectangle-item-info ul li:last-child{
 	border-left: 1px solid #a9a9a9;
 }
@@ -693,6 +774,10 @@ css for pagination
 	width: 10%;
 }
 
+.previous-page img:hover,
+.next-page img:hover{
+	cursor: pointer;
+}
 .pagination-list{
 	text-align: center;
 	width: 80%;
@@ -701,6 +786,10 @@ css for pagination
 .pagination-list ul li{
 	display: inline-block;
 	padding: 0 15px;
+}
+.pagination-list ul li:hover{
+   	color: #ccc;
+	cursor: pointer;
 }
 
 .pagination-list ul li.current-page{
@@ -815,6 +904,7 @@ css for footer
 	color: whitesmoke;
 	padding: 55px 0;
 }
+
 .footer-top{
 	line-height: 25px;
 	border-bottom:1px solid #525252;
@@ -879,10 +969,17 @@ css for footer
 	text-align: right
 }
 
+.footer ul li:hover{
+	cursor: pointer;
+}
 
+.footer-nav ul li:hover{
+	border-bottom: 1px solid #ccc;
+}
 
-
-
+/* 
+*==================================================================================================
+ */
 .nav-middle .container-checkbox{
 	display: inline-block;
 	padding-left: 30px;
