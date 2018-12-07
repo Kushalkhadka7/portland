@@ -4,8 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta http-equiv="X-UA-Compatible" content="ie=9">
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600i,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
@@ -45,7 +46,7 @@
 	<div class="spacing">
 		<div class="navigation-wrapper clearfix">
 			<div class="left-nav">
-				<img src="./images/Menu Icon.png" alt="hamburger menu" class="hamburger-menu" onclick="openNav()">
+				<img src="./images/Menu Icon.png" alt="menu" class="hamburger-menu" onclick="openNav()">
 				<div class="logo">
 					<img src="./images/portland.png" alt="site logo">
 				</div>
@@ -76,7 +77,7 @@
 					<ul>
 						<li>
 							<a href="#">
-								<img src="./images/Shopping Cart Icon.png" alt="shopping cart icon"> Cart
+								<img src="./images/Shopping Cart Icon.png" alt="shoppingcarticon"> Cart
 								<span>0</span>
 							</a>
 						</li>
@@ -134,30 +135,79 @@
 	</div>
 
 	<!-- slider -->
-	<div class="slider-wrapper">
-		<div class="carousel">
+	<div id="slider-main" class="slider-main">
+		<div id="slider-container" class="slider-container">
+			<div id="slider-image-container" class="slider-image-container">
+				<div class="mySlides">
+					<div class="back-image-carousel">
+						<img src="./images/iphone.png" class="carousel-image" alt="iphoneimage">
+					</div>
+					<div class="slider-caption">
+						<h1>Iphone 6 32 Gb Black</h1>
+						<p>
+							At first, for some time, I was not able to answer
+							him one word; but as he
+							had taken me in his arms I held fast by him,
+							or I should have fallen to the ground.
+						</p>
+						<button>buy now</button>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="./images/iphoneX.png" class="carousel-image" alt="iphoneXimage">
+					<div class="slider-caption">
+						<h1>Iphone X 16 Gb Black</h1>
+						<p>
+							At first, for some time, I was not able to answer
+							him one word; but as he
+							had taken me in his arms I held fast by him,
+							or I should have fallen to the ground.
+						</p>
+						<button>buy now</button>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="./images/iphone5s.png" class="carousel-image" alt="iphone5simage">
+					<div class="slider-caption">
+						<h1>Iphone 6 32 Gb Black</h1>
+						<p>
+							At first, for some time, I was not able to answer
+							him one word; but as he
+							had taken me in his arms I held fast by him,
+							or I should have fallen to the ground.
+						</p>
+						<button>buy now</button>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="./images/iphoneX.png" class="carousel-image" alt="iphoneXimage">
+					<div class="slider-caption">
+						<h1>Iphone 6 32 Gb Black</h1>
+						<p>
+							At first, for some time, I was not able to answer
+							him one word; but as he
+							had taken me in his arms I held fast by him,
+							or I should have fallen to the ground.
+						</p>
+						<button>buy now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-next previous-carousel" id='previous'>
+			<img src="./images/Previous.png" alt="previous">
+		</div>
+		<div class="carousel-next" id='next'>
+			<img src="./images/Next Icon.png" alt="next">
+		</div>
+		<div class="dots-container">
 			<ul>
-				<li class="active"></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li class="dots"></li>
+				<li class="dots"></li>
+				<li class="dots"></li>
+				<li class="dots"></li>
 			</ul>
 		</div>
-		<div class="carousel-next">
-			<img src="./images/Next Icon.png" alt="next icon">
-		</div>
-		<img src="./images/iphone.png" alt="iphone image">
-		<div class="slider-caption">
-			<h1>Iphone 6 32 Gb Black</h1>
-			<p>
-				At first, for some time, I was not able to answer
-				him one word; but as he
-				had taken me in his arms I held fast by him,
-				or I should have fallen to the ground.
-			</p>
-			<button>buy now</button>
-		</div>
-
 	</div>
 
 	<!-- main content -->
@@ -820,7 +870,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="./script.js"></script>
+
+	<script src="./js/slider.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

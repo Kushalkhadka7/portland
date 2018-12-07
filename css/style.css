@@ -202,23 +202,13 @@ css for header
 css for slider
 *=============================================================================
 */
-
-.slider-wrapper{
-	position: relative;
-}
-
-.slider-wrapper img{
-	width: 100%;
-	height: auto;
-}
-
 .slider-caption{
-	max-width: 100%;
-    padding:15px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 300px;
+	position: absolute;
+	padding: 15px;
 	color: #fff;
-	background-color: #000;
-	margin-top: -5px;
-	text-align: center;
 }
 
 .slider-caption h1 {
@@ -243,17 +233,67 @@ css for slider
     font-size: 11px;
 }
 
+.slider-main{
+    width: 100%;
+    position: relative;
+}
+.slider-container{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.slider-image-container{
+    position: absolute;
+    height: 500px;
+}
+.slider-image-container img{
+    display: block;
+    float: left;
+}
+.dots-container ul li{
+    width: 10px;
+    height: 10px;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    list-style-type: none;
+    display: inline-block;
+}
+.mySlides{
+    width: 1400px;
+    float: left;
+}
+.active-dots{
+    background-color: lightseagreen;
+}
+.slider-content-caption{
+    width: 35%;
+    display: inline-block;
+}
+.dots-container{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .carousel-next{
 	width: 25px;
     height: 25px;
     position: absolute;
-    right: 20px;
     padding: 6px;
-    top: 22%;
     border: 1Px solid #fff;
-    transform: translateY(-50%);
+    transform: translateX(-25%);
     border-radius: 50%;
+	bottom: 25px;
+	right: 25%;
 }
+
+.previous-carousel {
+    left: 30%;
+    transform: translateX(-30%);
+}
+
 .carousel-next:hover{
 	cursor: pointer;
 }
@@ -848,6 +888,8 @@ css for feedback section
 }
 
 .feedback-header p {
+	font-family: 'Crimson Text', serif;
+	font-weight: 600;
     font-size: 16px;
     color: #cccccc;
     line-height: 30px;
@@ -889,7 +931,8 @@ css for feedback section
 }
 
 .review p {
-    font-size: 14px;
+	font-family: 'Crimson Text', serif;
+    font-size: 16px;
     line-height: 22px;
 }
 
@@ -946,10 +989,12 @@ css for footer
 }
 
 .footer-bottom-left{
+	font-family: 'Crimson Text', serif;
 	text-align: center;
 	width: 100%;
 	font-style: italic;
-	padding-bottom: 15px;
+	padding-bottom: 16px;
+	font-size: 16px;
 }
 
 .footer-bottom-right{

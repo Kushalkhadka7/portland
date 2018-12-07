@@ -47,10 +47,6 @@ css for tablets
 		line-height: 35px;
 	}
 
-	.slider-wrapper{
-		margin-bottom: -5px;
-	}
-	
 	.search-wrapper ul li:first-child{
 		padding-right: 30px;
 	}
@@ -86,8 +82,15 @@ css for tablets
 	}	
 
 	.carousel-next{
-		right: 15px;
 		top: 50%;
+		transform:none;
+		right: 30px;
+	}
+
+	.previous-carousel{
+		top: 48%;
+		left: 30px;
+		transform: none;
 	}
 	
 	.box {
@@ -150,13 +153,25 @@ css for screen larger than tablets
 	.navigation{
 		padding-top: 0;
 	}
+
+	.slider-caption{
+		width: 10%;
+		padding: 0 0 0 150px;
+	}
+
+	.previous-carousel{
+		top: 50%;
+	}
+
 	.slider-caption h1 {
 		font-size: 42px;
 		line-height: 56px;
 	}
+
 	.search-wrapper ul li{
 		padding-left: 30px;
 	}
+
 	.search-wrapper ul li:first-child{
 		border-right: 1px solid #f0f2f7;
 	}
@@ -311,6 +326,7 @@ css for screen larger than tablets
 	.footer-bottom-left{
 		float: left;
 		width: 55%;
+		text-align: left;
 	}
 
 	.footer-bottom-right{
@@ -409,6 +425,10 @@ css for larger screens
 	}
 	.slider-caption{
 		padding-left: 210px;
+		width: 10%;
+	}
+	.previous-carousel{
+		top: 48.555555%;
 	}
 	.slider-caption p{
 		font-size: 14px;
