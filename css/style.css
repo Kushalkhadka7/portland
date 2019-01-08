@@ -1,1040 +1,1057 @@
-.body{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 11px;
+.body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
 }
 
-.container{
-	padding:0 15px;
-	width: 100%;
+.container {
+  padding: 0 15px;
+  width: 100%;
 }
-.spacing{
-	padding: 0 15px;
-	width: 100%;
-	border-bottom: 1px solid #ddd;
+.spacing {
+  padding: 0 15px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
 }
 
-.side-menu{
-	height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-	background-color:#ffffff;
-    overflow-x: hidden;
-	transition: 0.5s;
-	box-shadow: 10px 3px 28px -2px rgba(0,0,0,0.75);	
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: 10px 3px 28px -2px rgba(0, 0, 0, 0.75);
 }
-.side-menu .image{
-	width: 35px;
-	padding: 9px;
-	margin: 5px 0 5px 205px;
-	cursor: pointer;
+.side-menu .image {
+  width: 35px;
+  padding: 9px;
+  margin: 5px 0 5px 205px;
+  cursor: pointer;
 }
-.side-menu .image img{
-	width: 100%;
+.side-menu .image img {
+  width: 100%;
 }
-.side-menu .menu-top{
-	border-top: 1px solid #ccc;
+.side-menu .menu-top {
+  border-top: 1px solid #ccc;
 }
-.side-menu ul li{
-	padding: 10px 0;
+.side-menu ul li {
+  padding: 10px 0;
 }
-.side-menu ul li a{
-	margin:0 10px;
-    font-size: 16px;
-	text-transform: capitalize;
-	cursor: pointer;
-	color: black;
-	text-decoration: none;
+.side-menu ul li a {
+  margin: 0 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
 }
-.side-menu ul li:hover{
-	background-color: #a1a7bd;
+.side-menu ul li:hover {
+  background-color: #a1a7bd;
 }
-/* 
+/*
 *===================================================================================================================
 css for header
 *===================================================================================================================
 */
-.navigation-wrapper{ 
-	padding: 15px 0;
-	border-bottom: none;
+.navigation-wrapper {
+  padding: 15px 0;
+  border-bottom: none;
 }
 
-.left-nav{
-	float: left;
-    width: 100%;
-	display: block;
-	padding-bottom: 20px;
+.left-nav {
+  float: left;
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
 }
 
-.hamburger-menu{
-	margin-bottom: 5px;
-	cursor: pointer;
+.hamburger-menu {
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
-.logo{
-	display: inline-block;
-	padding-left: 80px;
-	border-left: none;
+.logo {
+  display: inline-block;
+  padding-left: 80px;
+  border-left: none;
 }
 
-.right-nav{
-	float: left;;
-    width: 100%;
+.right-nav {
+  float: left;
+  width: 100%;
 }
 
-.nav{
-	display: none;
-    width: 100%;
+.nav {
+  display: none;
+  width: 100%;
 }
 
-.nav ul li{
-	display: inline-block;
-    text-transform: capitalize;
-	padding-right: 15px;
-	line-height: 35px;
+.nav ul li {
+  display: inline-block;
+  text-transform: capitalize;
+  padding-right: 15px;
+  line-height: 35px;
 }
-.nav ul li a:hover{
-	border-bottom: 1px solid #ccc;
-}
-
-.cart{
-	display: block;
-    width: 100%;
+.nav ul li a:hover {
+  border-bottom: 1px solid #ccc;
 }
 
-.cart ul li{
-	display: inline-block;
-	text-transform: capitalize;
+.cart {
+  display: block;
+  width: 100%;
 }
 
-.cart span{
-	background-color: #eee;
-    padding: 3px 7px;
-    border-radius: 50%;
+.cart ul li {
+  display: inline-block;
+  text-transform: capitalize;
 }
 
-.signin-btn{
-	border: 2px solid #eee;
-    border-radius: 20px;
-	padding: 5px 16px;
-	margin-left: 25px;
+.cart span {
+  background-color: #eee;
+  padding: 3px 7px;
+  border-radius: 50%;
+}
+
+.signin-btn {
+  border: 2px solid #eee;
+  border-radius: 20px;
+  padding: 5px 16px;
+  margin-left: 25px;
 }
 
 .nav ul li a,
-.cart ul li a{
-	text-decoration: none;
-	color: #000;
-	font-weight: 500;
-	font-size: 14px;
-	
+.cart ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-/* 
+/*
 *==================================================bottom-nav================================================================
 */
 
-.bottom-nav{
-	width: 100%;
-    line-height: 24px;
-    text-transform: uppercase;
+.bottom-nav {
+  width: 100%;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
-.navigation{
-	float: left;
-	font-size: 11px;
-	padding-top: 10px;
+.navigation {
+  float: left;
+  font-size: 11px;
+  padding-top: 10px;
 }
 
-.navigation ul li{
-	display: inline-block;
-    text-transform: capitalize;
-    padding-right: 15px;
+.navigation ul li {
+  display: inline-block;
+  text-transform: capitalize;
+  padding-right: 15px;
 }
-.navigation ul li a{
-	text-decoration: none;
-	color: #ddd;
-	font-weight: 600;
-	text-transform: uppercase;
+.navigation ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .navigation ul li a:hover {
-   border-bottom: 1px solid rgb(95, 95, 95);
-   color: rgb(95, 95, 95);
+  border-bottom: 1px solid rgb(95, 95, 95);
+  color: rgb(95, 95, 95);
 }
-.navigation ul li.active a{
-	color: #000;
-}
-
-.search-wrapper{
-	float: left;;
+.navigation ul li.active a {
+  color: #000;
 }
 
-.search-wrapper ul li{
-	display: inline-block;
+.search-wrapper {
+  float: left;
 }
 
-.search-wrapper ul li a{
-	text-decoration: none;
-	color: #000;
+.search-wrapper ul li {
+  display: inline-block;
 }
 
-.search-wrapper ul li:first-child{
-	padding-right: 15px;
-    font-weight: 600;
-	color: #ddd;
-	cursor: pointer;
+.search-wrapper ul li a {
+  text-decoration: none;
+  color: #000;
 }
 
-.search-wrapper input{
-	border: none;
-	padding: 10px;
+.search-wrapper ul li:first-child {
+  padding-right: 15px;
+  font-weight: 600;
+  color: #ddd;
+  cursor: pointer;
 }
 
-.search-wrapper input::placeholder{
-	font-weight: 600;
-    color: #ddd;
+.search-wrapper input {
+  border: none;
+  padding: 10px;
 }
 
+.search-wrapper input::placeholder {
+  font-weight: 600;
+  color: #ddd;
+}
 
-/* 
+/*
 *=============================================================================
 css for slider
 *=============================================================================
 */
-.slider-caption{
-	top: 50%;
-	transform: translateY(-50%);
-	width: 300px;
-	position: absolute;
-	padding: 15px;
-	color: #fff;
+.slider-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  position: absolute;
+  padding: 15px;
+  color: #fff;
 }
 
 .slider-caption h1 {
-	font-size: 16px;
-    line-height: 20px;
-    font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 800;
 }
 
 .slider-caption p {
-	font-size: 10px;
-    padding: 8px 0;
-    line-height: 16px;
+  font-size: 10px;
+  padding: 8px 0;
+  line-height: 16px;
 }
 
-.slider-caption button{
-	background-color: #3366ff;
-    color: #fff;
-    border: none;
-    text-transform: uppercase;
-    padding: 13px 35px;
-    border-radius: 20px;
-    font-size: 11px;
+.sidebar-capiton-text {
+  display: inline-block;
+  padding-left: 30px;
 }
 
-.slider-main{
-    width: 100%;
-    position: relative;
-}
-.slider-container{
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-}
-.slider-image-container{
-    position: absolute;
-    height: 500px;
-}
-.slider-image-container img{
-    display: block;
-    float: left;
-}
-.dots-container ul li{
-    width: 10px;
-    height: 10px;
-    border:1px solid #ccc;
-    border-radius: 50%;
-    list-style-type: none;
-    display: inline-block;
-}
-.mySlides{
-    width: 1400px;
-    float: left;
-}
-.active-dots{
-    background-color: lightseagreen;
-}
-.slider-content-caption{
-    width: 35%;
-    display: inline-block;
-}
-.dots-container{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+.sidebar-capiton-text-heading {
+  display: inline-block;
 }
 
+.slider-caption button {
+  background-color: #3366ff;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  padding: 13px 35px;
+  border-radius: 20px;
+  font-size: 11px;
+}
 
-.carousel-next{
-	width: 25px;
-    height: 25px;
-    position: absolute;
-    padding: 6px;
-    border: 1Px solid #fff;
-    transform: translateX(-25%);
-    border-radius: 50%;
-	bottom: 25px;
-	right: 25%;
+.slider-main {
+  width: 100%;
+  position: relative;
+}
+.slider-container {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.slider-image-container {
+  position: absolute;
+  height: 500px;
+}
+.slider-image-container img {
+  display: block;
+  float: left;
+}
+.dots-container ul li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  list-style-type: none;
+  display: inline-block;
+}
+.mySlides {
+  width: 1400px;
+  float: left;
+}
+.active-dots {
+  background-color: lightseagreen;
+}
+.slider-content-caption {
+  width: 35%;
+  display: inline-block;
+}
+.dots-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-next {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  padding: 6px;
+  border: 1px solid #fff;
+  transform: translateX(-25%);
+  border-radius: 50%;
+  bottom: 25px;
+  right: 25%;
 }
 
 .previous-carousel {
-    left: 30%;
-    transform: translateX(-30%);
+  left: 30%;
+  transform: translateX(-30%);
 }
 
-.carousel-next:hover{
-	cursor: pointer;
+.carousel-next:hover {
+  cursor: pointer;
 }
 
-.carousel-next img{
-	width: auto;
-	margin: 0 auto;
-	display: block;
+.carousel-next img {
+  width: auto;
+  margin: 0 auto;
+  display: block;
 }
 
-.carousel{
-	position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
+.carousel {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.carousel ul li{
-	display: inline-block;
-    width: 8px;
-    border-radius: 50%;
-    height: 8px;
-    border: 1px solid #fff;
+.carousel ul li {
+  display: inline-block;
+  width: 8px;
+  border-radius: 50%;
+  height: 8px;
+  border: 1px solid #fff;
 }
-.carousel ul li.active{
-	background-color: #fff;
+.carousel ul li.active {
+  background-color: #fff;
 }
 
-/* 
+/*
 *===============================================================================
 css for body
 *===============================================================================
 */
 
 .body-wrapper {
-    background-color: #ccc;
-    padding: 50px 0 0 0;
+  background-color: #ccc;
+  padding: 50px 0 0 0;
 }
 
-/* 
+/*
 ==============body-navigation==================================
 */
 
 .body-nav {
-    background: #fff;
-    line-height:42px;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 25px;
-    padding: 0 20px;
+  background: #fff;
+  line-height: 42px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  padding: 0 20px;
 }
 
-.body-nav ul li{
-	display: inline;
-	padding: 10px 20px;
+.body-nav ul li {
+  display: inline;
+  padding: 10px 20px;
 }
 
-.sort-by{
-	width: 100%;
-	text-align: center;
+.sort-by {
+  width: 100%;
+  text-align: center;
 }
 
-.nav-middle{
-	width: 100%;
-    text-align: center;
+.nav-middle {
+  width: 100%;
+  text-align: center;
 }
 
 .nav-middle input.lg-input {
-    width: 60%;
-    font-weight: 600;
-    padding-left: 15px;
-    color: #ccc;
+  width: 60%;
+  font-weight: 600;
+  padding-left: 15px;
+  color: #ccc;
 }
 
 .nav-middle input.sm-input {
-    width:24%;
-    font-weight: 600;
-    padding-left: 15px;
+  width: 24%;
+  font-weight: 600;
+  padding-left: 15px;
 }
 
 .nav-middle input {
-	background-color: #f0f2f7;
-	border: 1px solid #cccccc;
-    padding: 6px;
-    border-radius: 20px;
+  background-color: #f0f2f7;
+  border: 1px solid #cccccc;
+  padding: 6px;
+  border-radius: 20px;
 }
 
-.nav-middle span{
-	color: #ccc;
+.nav-middle span {
+  color: #ccc;
 }
 
-.ship-to{
-	width: 100%;
-    text-align: center;
+.ship-to {
+  width: 100%;
+  text-align: center;
 }
 
-.sort-by ul li,.ship-to ul li{
-	display:inline-block;
-	padding: 0 5px;
+.sort-by ul li,
+.ship-to ul li {
+  display: inline-block;
+  padding: 0 5px;
 }
 
 .sort-by ul li,
 .nav-middle ul li,
-.ship-to ul li{
-	text-transform: uppercase;
+.ship-to ul li {
+  text-transform: uppercase;
 }
 
 .sort-by ul li:first-child,
-.ship-to ul li:first-child{
-	color: #ccc;
-	padding-left: 0;
+.ship-to ul li:first-child {
+  color: #ccc;
+  padding-left: 0;
 }
 .sort-by ul li:last-child:hover,
-.ship-to ul li:last-child:hover{
-	cursor: pointer;
+.ship-to ul li:last-child:hover {
+  cursor: pointer;
 }
 
 .container-checkbox {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 /* Hide the browser's default checkbox */
 .container-checkbox input {
-    position: absolute;
-    opacity: 1;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-	position: absolute;
-    top: 0;
-    left: 0;
-    height: 18px;
-    width: 18px;
-	border: 2px solid #eee;
-	border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border: 2px solid #eee;
+  border-radius: 5px;
 }
 
 /* When the checkbox is checked, add a blue background */
 .container-checkbox input:checked ~ .checkmark {
-    background-color: #00e2aa;
+  background-color: #00e2aa;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* Show the checkmark when checked */
 .container-checkbox input:checked ~ .checkmark:after {
-    display: block;
+  display: block;
 }
 
 /* Style the checkmark/indicator */
 .container-checkbox .checkmark:after {
-	left: 4px;
-    top: 1px;
-    width: 3px;
-    height: 7px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
+  left: 4px;
+  top: 1px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
-
 
 /* for radio button */
 
 .container-radio {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
 /* Hide the browser's default radio button */
 .container-radio input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark-radio {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15px;
-    width: 15px;
-	border: 2px solid #eee;
-    border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #eee;
+  border-radius: 50%;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark-radio:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
 .container-radio input:checked ~ .checkmark-radio:after {
-    display: block;
+  display: block;
 }
 
 /* Style the indicator (dot/circle) */
 .container-radio .checkmark-radio:after {
-	top: 3px;
-    left: 3px;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background:#00e2aa;
+  top: 3px;
+  left: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00e2aa;
 }
 
-
-
-
-/*  
+/*
 ========================main-body-content============================
 */
-/* 
+/*
 *
 *=======================sidebar======================================
 */
 
-.sidebar{
-	width: 100%;
-	float: none;
-	font-size: 13px;
-	font-weight: 500;
+.sidebar {
+  width: 100%;
+  float: none;
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.sidebar-top, .sidebar-third {
-    background: #fff;
-    border-radius: 5px;
+.sidebar-top,
+.sidebar-third {
+  background: #fff;
+  border-radius: 5px;
 }
 
 .sidebar-top ul li {
-    padding: 15px;
-    text-transform: capitalize;
-    border-bottom: 1px solid #f0f2f7;
-    position: relative;
-    font-size: 13px;
-    font-weight: 500;
+  padding: 15px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #f0f2f7;
+  position: relative;
+  font-size: 13px;
+  font-weight: 500;
 }
-.sidebar-top ul li.muted{
-	background-color: #f0f2f7;
-	color: #a1a7bd;
-	border-bottom: 1px solid #dfe4ee;
-}
-
-.sidebar-top ul li:last-child{
-	border-bottom: none;
+.sidebar-top ul li.muted {
+  background-color: #f0f2f7;
+  color: #a1a7bd;
+  border-bottom: 1px solid #dfe4ee;
 }
 
-.sidebar-top ul li:hover{
-	background-color: #f0f2f7;
-	cursor: pointer;
+.sidebar-top ul li:last-child {
+  border-bottom: none;
 }
 
-.sidebar-second,.sidebar-last{
-	margin: 20px 0;
-	background: #fff;
-	border-radius: 5px;
+.sidebar-top ul li:hover {
+  background-color: #f0f2f7;
+  cursor: pointer;
 }
 
-.sidebar-card .heading{
-	font-size: 12px;
-	font-weight: 600;
-	text-transform: uppercase;
-	padding:15px;
-	border-bottom: 1px solid #f0f2f7;
+.sidebar-second,
+.sidebar-last {
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 5px;
 }
 
-.sidebar-card .content{
-	padding: 15px;
+.sidebar-card .heading {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px;
+  border-bottom: 1px solid #f0f2f7;
 }
 
-.sidebar-card .content ul li span{
-	float: right;
-	color: #ccc;
-	font-weight: 500;
+.sidebar-card .content {
+  padding: 15px;
 }
 
-.sidebar-card .content input{
-	float: left;
+.sidebar-card .content ul li span {
+  float: right;
+  color: #ccc;
+  font-weight: 500;
 }
 
-.sidebar-card .content ul li{
-	padding: 10px 0;
+.sidebar-card .content input {
+  float: left;
 }
 
-.sidebar-card .content ul li p{
-	font-weight: 500;
-	text-transform: capitalize;
-	padding-left: 30px;
-    display: inline-block;
+.sidebar-card .content ul li {
+  padding: 10px 0;
 }
 
-.sidebar-card .heading p{
-	display: inline-block;
+.sidebar-card .content ul li p {
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-left: 30px;
+  display: inline-block;
 }
 
-.sidebar .heading span{
-	float: right;
-	font-size: 11px;
+.sidebar-card .heading p {
+  display: inline-block;
 }
 
-.sidebar-card .content .free{
-	float: left;
-	width: 50%;
-	padding:15px;
+.sidebar .heading span {
+  float: right;
+  font-size: 11px;
 }
 
-.sidebar-card .content .paid{
-	float: right;
-	padding:15px;
-	width: 50%;
-	border-left: 1px solid #f0f2f7;
-
+.sidebar-card .content .free {
+  float: left;
+  width: 50%;
+  padding: 15px;
 }
 
-.sidebar-last input{
-	display: inline-block;
+.sidebar-card .content .paid {
+  float: right;
+  padding: 15px;
+  width: 50%;
+  border-left: 1px solid #f0f2f7;
 }
 
-.sidebar-last .content{
-	padding: 0;
+.sidebar-last input {
+  display: inline-block;
 }
 
-.sidebar-last .content p{
-	display: inline-block;
+.sidebar-last .content {
+  padding: 0;
+}
+
+.sidebar-last .content p {
+  display: inline-block;
 }
 
 .sidebar ul li img {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.sidebar .heading span a{
-	color: #2754eb;
+.sidebar .heading span a {
+  color: #2754eb;
 }
 
 .sidebar-second img,
 .sidebar-third img,
-.sidebar-last img{
-	width: 100%;
+.sidebar-last img {
+  width: 100%;
 }
 
-
-/* 
+/*
 ==================================main-content==========================
 */
 
-.main-content{
-	width: 100%;
-	float: none;
+.main-content {
+  width: 100%;
+  float: none;
 }
 
-.box{
-	width: 100%;
-	margin-bottom: 30px;
-	display: block;
-	background-color: #fff;
-	text-align: center;
-	padding: 30px;
-	border-radius: 5px;
+.box {
+  width: 100%;
+  margin-bottom: 30px;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
 }
-.box:hover{
-	background-blend-mode: lighten;
-	cursor: pointer;
-}
-
-.box-image img{
-	width: 100%;
-	height: auto;
+.box:hover {
+  background-blend-mode: lighten;
+  cursor: pointer;
 }
 
-.prod-info .item-name p{
-	margin-bottom: 10px;
+.box-image img {
+  width: 100%;
+  height: auto;
+}
+
+.prod-info .item-name p {
+  margin-bottom: 10px;
 }
 
 .best-items-content span {
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #cccccc;
-    line-height: 20px;
-}
-.best-items:hover{
-	cursor: pointer;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cccccc;
+  line-height: 20px;
 }
 
-.price p{
-	font-weight: 500;
+.best-items a {
+  color: black;
+  text-decoration: none;
+}
+
+.best-items:hover {
+  cursor: pointer;
+}
+
+.price p {
+  font-weight: 500;
 }
 
 .price span {
-    font-size: 14px;
-    text-decoration: line-through;
-    padding-right: 15px;
+  font-size: 14px;
+  text-decoration: line-through;
+  padding-right: 15px;
 }
 
 .rectangle {
-    float: none;
-    width: 100%;
-    background: white;
-    position: relative;
-    border-radius: 5px;
-    margin-bottom: 30px;
+  float: none;
+  width: 100%;
+  background: white;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 
-.rectangle .top-price{
-	position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #000;
-    color: #fff;
-    padding: 3px 10px;
-    font-size: 16px;
-    border-radius: 8px;
+.rectangle .top-price {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
-.rectangle-content{
-	padding:9px 30px;
+.rectangle-content {
+  padding: 9px 30px;
 }
 
-.rectangle-content .item-name  {
-	float: left;
-	width: 45%;
+.rectangle-content .item-name {
+  float: left;
+  width: 45%;
 }
 
-.rectangle-content span{
-	font-size: 11px;
-	text-transform: uppercase;
-	font-weight: 500;
-	color: #cccccc;
-	line-height: 20px;
+.rectangle-content span {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cccccc;
+  line-height: 20px;
 }
 
-.rectangle-item-info{
-	float: right;
-	padding: 15px 0;
-	text-align: right;
-	width: 50%;
+.rectangle-item-info {
+  float: right;
+  padding: 15px 0;
+  text-align: right;
+  width: 50%;
 }
 
-.rectangle-info ul li{
-	display: inline;
-	padding-left: 20px;
-	font-size: 16px;	
+.rectangle-info ul li {
+  display: inline;
+  padding-left: 20px;
+  font-size: 16px;
 }
 
-.rectangle-item-info ul{
-	border-radius: 20px;
-	display: inline-block;
-	border: 1px solid #a9a9a9;
+.rectangle-item-info ul {
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
 }
 
-.rectangle-item-info ul li{
-	display: inline-block;
-	text-transform: uppercase;
-	padding:4px;
-	font-size: 11px;
+.rectangle-item-info ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 4px;
+  font-size: 11px;
 }
 
-.rectangle-item-info ul li:last-child:hover{
-	cursor: pointer;
+.rectangle-item-info ul li:last-child:hover {
+  cursor: pointer;
 }
 
-.rectangle-item-info ul li:last-child{
-	border-left: 1px solid #a9a9a9;
+.rectangle-item-info ul li:last-child {
+  border-left: 1px solid #a9a9a9;
 }
 
-
-.item-name{
-	padding: 15px 0;
+.item-name {
+  padding: 15px 0;
 }
 
-.item-name p{
-	font-size: 16px;
-	font-weight: 500;
-	text-transform: capitalize;
-	line-height: 20px;
+.item-name p {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 20px;
 }
 
-/* 
+/*
 *=======================================================================================
 css for pagination
 *=======================================================================================
  */
 
-
 .pagination {
-    background: #fff;
-    padding: 15px;
-    line-height: 35px;
-    font-weight: 500;
-    border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  line-height: 35px;
+  font-weight: 500;
+  border-radius: 5px;
 }
 
-.previous-page,.pagination-list{
-	float: left;
+.previous-page,
+.pagination-list {
+  float: left;
 }
 
-.previous-page{
-	width: 10%;
+.previous-page {
+  width: 10%;
 }
 
 .previous-page img:hover,
-.next-page img:hover{
-	cursor: pointer;
+.next-page img:hover {
+  cursor: pointer;
 }
-.pagination-list{
-	text-align: center;
-	width: 80%;
-}
-
-.pagination-list ul li{
-	display: inline-block;
-	padding: 0 15px;
-}
-.pagination-list ul li:hover{
-   	color: #ccc;
-	cursor: pointer;
+.pagination-list {
+  text-align: center;
+  width: 80%;
 }
 
-.pagination-list ul li.current-page{
-	border-radius: 50%;
-	color: #cccccc;
-	background-color: rgb(255, 255, 255);
-	box-shadow: 0px 20px 40px 0px rgba(168, 172, 185, 0.62);	
+.pagination-list ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.pagination-list ul li a:hover {
+  color: #ccc;
+  cursor: pointer;
 }
 
-.next-page{
-	float: right;
-	width: 10%;
-	text-align: right;
+.pagination-list ul li.current-page {
+  border-radius: 50%;
+  color: #cccccc;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 9px 32px 2px rgba(60, 60, 60, 0.62);
 }
 
-/* 
+.next-page {
+  float: right;
+  width: 10%;
+  text-align: right;
+}
+
+/*
 *===========================================================================================
 css for best sellers
 *===========================================================================================
 */
 
-
 .best-seller {
-    background: #fff;
-    text-align: center;
-    margin: 50px 0;
-    border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  margin: 50px 0;
+  border-radius: 5px;
 }
 
 .best-seller-header {
-    padding: 20px 0;
-	text-transform: uppercase;
-	border-bottom: 1px solid #f0f2f7;
+  padding: 20px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0f2f7;
 }
 
 .best-seller-item {
-    padding-bottom: 35px;
+  padding-bottom: 35px;
 }
 
-/* 
+/*
 *===================================================================================================
 css for feedback section
 *===================================================================================================
 */
 
-.feedback-section{
-	text-align: center;
-	background: #fff;
-	padding: 30px 0;
+.feedback-section {
+  text-align: center;
+  background: #fff;
+  padding: 30px 0;
 }
 
 .feedback-header h2 {
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 36px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
 }
 
 .feedback-header p {
-	font-family: 'Crimson Text', serif;
-	font-weight: 600;
-    font-size: 16px;
-    color: #cccccc;
-    line-height: 30px;
-    font-style: italic;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #cccccc;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.feedback-section .feedbacks a {
+  text-decoration: none;
+  color: #000;
 }
 
 .feedbacks {
-	float: left;
-    width: 100%;
-    text-align: left;
-    padding: 10px;
+  float: left;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
 }
 
 .name {
-    margin-bottom: 20px;
-    text-transform: capitalize;
-    line-height: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  line-height: 20px;
 }
 
 .name p {
-    font-size: 14px;
-    font-weight: 500;
-    font-size: 14px;
-    position: relative;
-    padding-left: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  position: relative;
+  padding-left: 60px;
 }
 
 .name span {
-    margin: 5px 0;
-    font-style: italic;
-    color: #ccc;
-    position: relative;
-    padding-left: 60px;
+  margin: 5px 0;
+  font-style: italic;
+  color: #ccc;
+  position: relative;
+  padding-left: 60px;
 }
 
 .name::before {
-    content: url(../images/user1.png);
-    position: absolute;
+  content: url(../images/user1.png);
+  position: absolute;
 }
 
 .review p {
-	font-family: 'Crimson Text', serif;
-    font-size: 16px;
-    line-height: 22px;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  line-height: 22px;
 }
 
-/* 
+/*
 *====================================================================================================
 css for footer
 *====================================================================================================
 */
 
-.footer{
-	background-color: #333333;
-	color: whitesmoke;
-	padding: 55px 0;
+.footer {
+  background-color: #333333;
+  color: whitesmoke;
+  padding: 55px 0;
 }
 
-.footer-top{
-	line-height: 25px;
-	border-bottom:1px solid #525252;
-	padding-bottom: 30px;
+.footer-top {
+  line-height: 25px;
+  border-bottom: 1px solid #525252;
+  padding-bottom: 30px;
 }
 
-.footer-logo{
-	width: 100%;
-    text-align: center;
+.footer-logo {
+  width: 100%;
+  text-align: center;
 }
 
-.footer-nav{
-	width: 100%;
-	text-align: center;
-	padding: 15px 0;
+.footer-nav {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
 }
 
-.footer-logo,.footer-nav{
-	float: left;
+.footer-logo,
+.footer-nav {
+  float: left;
 }
 
-.footer-nav ul li{
-	display: inline-block;
-	font-size: 12px;
-	font-weight: 500;
-	text-transform: uppercase;
-	padding: 0 10px;
+.footer-nav ul li {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 10px;
 }
 
-.footer-icon{
-	width: 100%;
-    text-align: center;
+.footer ul li a {
+  color: #8c8a8a;
+  text-decoration: none;
+}
+.pagination ul li a {
+  color: black;
+  text-decoration: none;
 }
 
-.footer-bottom{
-	color: #666666;
-	font-size: 13px;
-	padding: 30px 0;
+.footer-icon {
+  width: 100%;
+  text-align: center;
 }
 
-.footer-bottom-left{
-	font-family: 'Crimson Text', serif;
-	text-align: center;
-	width: 100%;
-	font-style: italic;
-	padding-bottom: 16px;
-	font-size: 16px;
+.footer-bottom {
+  color: #666666;
+  font-size: 13px;
+  padding: 30px 0;
 }
 
-.footer-bottom-right{
-	width: 100%;
-	text-align: center;
-	font-weight: 600;
-	text-transform: uppercase;
+.footer-bottom-left {
+  font-family: "Crimson Text", serif;
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+  padding-bottom: 16px;
+  font-size: 16px;
+}
+
+.footer-bottom-right {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .footer-icon ul li,
-.footer-bottom-right ul li{
-	display:inline-block;
-	padding-left: 15px;
+.footer-bottom-right ul li {
+  display: inline-block;
+  padding-left: 15px;
 }
 
-.footer-bottom-right ul li{
-	text-align: right
+.footer-bottom-right ul li {
+  text-align: right;
 }
 
-.footer ul li:hover{
-	cursor: pointer;
+.footer ul li:hover {
+  cursor: pointer;
 }
 
-.footer-nav ul li:hover{
-	border-bottom: 1px solid #ccc;
+.footer-nav ul li:hover {
+  border-bottom: 1px solid #ccc;
 }
 
-/* 
+/*
 *==================================================================================================
  */
-.nav-middle .container-checkbox{
-	display: inline-block;
-	padding-left: 30px;
+.nav-middle .container-checkbox {
+  display: inline-block;
+  padding-left: 30px;
 }
 
-.nav-middle .checkmark{
-	top: 12px;
+.nav-middle .checkmark {
+  top: 12px;
 }
-
-
-
-
-	
