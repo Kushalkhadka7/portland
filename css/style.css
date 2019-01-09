@@ -1,5 +1,5 @@
 .body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
 }
 
@@ -374,7 +374,12 @@ css for body
   padding-left: 15px;
   color: #ccc;
 }
-
+.nav-middle input:focus {
+  background-color: white;
+  color: #000;
+  outline: 0;
+  border: 1px solid #424242;
+}
 .nav-middle input.sm-input {
   width: 24%;
   font-weight: 600;
@@ -453,7 +458,7 @@ css for body
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -503,7 +508,7 @@ css for body
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark-radio:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -895,7 +900,7 @@ css for feedback section
 }
 
 .feedback-header p {
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-weight: 600;
   font-size: 16px;
   color: #cccccc;
@@ -943,7 +948,7 @@ css for feedback section
 }
 
 .review p {
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   font-size: 16px;
   line-height: 22px;
 }
@@ -1011,7 +1016,7 @@ css for footer
 }
 
 .footer-bottom-left {
-  font-family: "Crimson Text", serif;
+  font-family: 'Crimson Text', serif;
   text-align: center;
   width: 100%;
   font-style: italic;
