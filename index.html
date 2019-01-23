@@ -1,829 +1,825 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="X-UA-Compatible" content="ie=9" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600i,700i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <title>Document</title>
-  </head>
 
-  <body class="body">
-    <div class="side-menu clearfix" id="sidebar">
-      <div class="image" onclick="closeNav()">
-        <img src="./images/crossarrow.png" alt="close sidebar" />
-      </div>
-      <div class="menu-top">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">devices</a></li>
-          <li><a href="#">delivery & payment</a></li>
-          <li><a href="#">guarantee</a></li>
-          <li><a href="#">about us</a></li>
-        </ul>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=9" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600i,700i" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <div class="side-menu clearfix" id="sidebar">
+    <div class="image" onclick="closeNav()">
+      <img src="./images/crossarrow.png" alt="close sidebar" />
     </div>
+    <div class="menu-top">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">devices</a></li>
+        <li><a href="#">delivery & payment</a></li>
+        <li><a href="#">guarantee</a></li>
+        <li><a href="#">about us</a></li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- header top navigation -->
-    <div class="spacing">
-      <div class="navigation-wrapper clearfix">
-        <div class="left-nav">
-          <img
+  <!-- header top navigation -->
+  <div class="header-nav-container">
+    <div class="navigation-wrapper clearfix">
+      <div class="brand">
+        <!-- <img
             src="./images/Menu Icon.png"
             alt="menu"
             class="hamburger-menu"
             onclick="openNav()"
-          />
-          <div class="logo">
-            <a href="#">
-              <img src="./images/portland.png" alt="site logo" />
-            </a>
-          </div>
+          /> -->
+        <i class="fas fa-bars hamburger-menu" onclick="openNav()"></i>
+        <div class="logo">
+          <a href="#">
+            <img src="./images/portland.png" alt="site logo" />
+          </a>
         </div>
-        <div class="right-nav">
-          <div class="nav">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">devices</a></li>
-              <li><a href="#">delivery & payment</a></li>
-              <li><a href="#">guarantee</a></li>
-              <li><a href="#">about us</a></li>
-            </ul>
-          </div>
-          <div class="cart">
-            <ul>
-              <li>
-                <a href="#">
-                  <img
+      </div>
+      <div class="right-nav">
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">devices</a></li>
+            <li><a href="#">delivery & payment</a></li>
+            <li><a href="#">guarantee</a></li>
+            <li><a href="#">about us</a></li>
+          </ul>
+        </div>
+        <div class="cart">
+          <ul>
+            <li>
+              <a href="#">
+                <!-- <img
                     src="./images/Shopping Cart Icon.png"
                     alt="shoppingcarticon"
-                  />
-                  Cart <span>0</span>
-                </a>
-              </li>
-              <li><a href="#" class="signin-btn">Sign in</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- header bottom navigation -->
-    <div class="bottom-nav container clearfix">
-      <div class="navigation">
-        <ul>
-          <li><a href="#"> top sales </a></li>
-          <li><a href="#"> brand focus </a></li>
-          <li class="active"><a href="#"> hi-tech </a></li>
-          <li><a href="#"> best sellers </a></li>
-          <li><a href="#"> projects </a></li>
-        </ul>
-      </div>
-      <div class="search-wrapper">
-        <ul>
-          <li><a href="#"> support </a></li>
-          <li>
-            <a href="#">
-              <img src="./images/Search Icon.png" alt="search icon" />
-            </a>
-            <input type="text" placeholder="I'm looking for.." />
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- slider -->
-    <div id="slider-main" class="slider-main">
-      <div id="slider-container" class="slider-container">
-        <div id="slider-image-container" class="slider-image-container">
-          <div class="mySlides">
-            <div class="back-image-carousel">
-              <img
-                src="./images/iphone.png"
-                class="carousel-image"
-                alt="iphoneimage"
-              />
-            </div>
-            <div class="slider-caption">
-              <h1>Iphone 6 32 Gb Black</h1>
-              <p>
-                At first, for some time, I was not able to answer him one word;
-                but as he had taken me in his arms I held fast by him, or I
-                should have fallen to the ground.
-              </p>
-              <button>buy now</button>
-            </div>
-          </div>
-          <div class="mySlides">
-            <img
-              src="./images/iphoneX.png"
-              class="carousel-image"
-              alt="iphoneXimage"
-            />
-            <div class="slider-caption">
-              <h1>Iphone X 16 Gb Black</h1>
-              <p>
-                At first, for some time, I was not able to answer him one word;
-                but as he had taken me in his arms I held fast by him, or I
-                should have fallen to the ground.
-              </p>
-              <button>buy now</button>
-            </div>
-          </div>
-          <div class="mySlides">
-            <img
-              src="./images/iphone5s.png"
-              class="carousel-image"
-              alt="iphone5simage"
-            />
-            <div class="slider-caption">
-              <h1>Iphone 6 32 Gb Black</h1>
-              <p>
-                At first, for some time, I was not able to answer him one word;
-                but as he had taken me in his arms I held fast by him, or I
-                should have fallen to the ground.
-              </p>
-              <button>buy now</button>
-            </div>
-          </div>
-          <div class="mySlides">
-            <img
-              src="./images/iphoneX.png"
-              class="carousel-image"
-              alt="iphoneXimage"
-            />
-            <div class="slider-caption">
-              <h1>Iphone 6 32 Gb Black</h1>
-              <p>
-                At first, for some time, I was not able to answer him one word;
-                but as he had taken me in his arms I held fast by him, or I
-                should have fallen to the ground.
-              </p>
-              <button>buy now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-next previous-carousel" id="previous">
-        <img src="./images/Previous.png" alt="previous" />
-      </div>
-      <div class="carousel-next" id="next">
-        <img src="./images/Next Icon.png" alt="next" />
-      </div>
-      <div class="dots-container">
-        <ul>
-          <li class="dots"></li>
-          <li class="dots"></li>
-          <li class="dots"></li>
-          <li class="dots"></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- main content -->
-    <div class="main-wrapper">
-      <div class="body-wrapper">
-        <div class="container">
-          <div class="main-content-wrapper">
-            <!-- body navigation -->
-            <div class="body-nav clearfix">
-              <div class="sort-by">
-                <ul>
-                  <li>sort by:</li>
-                  <li>
-                    best match
-                    <img src="./images/Open Icon.png" alt="open icon" />
-                  </li>
-                </ul>
-              </div>
-              <div class="nav-middle">
-                <ul>
-                  <li>
-                    <span>keywords</span>
-                    <input type="text" class="lg-input" placeholder="TABLET" />
-                  </li>
-                  <li>
-                    <span>price</span>
-                    <input type="text" class="sm-input" placeholder="10" />
-                    <span>-</span>
-                    <input type="text" class="sm-input" placeholder="1000" />
-                  </li>
-                  <li>
-                    <label class="container-checkbox"
-                      >free Shipping <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="ship-to">
-                <ul>
-                  <li>ship to:</li>
-                  <li>
-                    usa <img src="./images/Open Icon.png" alt="open icon" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- body content -->
-            <div class="body-conetnt clearfix">
-              <!-- sidebar -->
-              <div class="sidebar">
-                <div class="sidebar-top">
-                  <ul>
-                    <li class="clearfix">
-                      <div>top sales</div>
-                      <img src="./images/openicon.png" alt="open icon" />
-                    </li>
-                    <li class="clearfix">
-                      <div>brand focus</div>
-                      <img src="./images/openicon.png" alt="open icon" />
-                    </li>
-                    <li class="clearfix">
-                      <div>hi-tech</div>
-                      <img src="./images/Open Icon.png" alt="open icon" />
-                    </li>
-                    <li class="clearfix muted">
-                      <div>cell phones</div>
-                    </li>
-                    <li class="clearfix muted">
-                      <div>cameras</div>
-                    </li>
-                    <li class="clearfix muted">
-                      <div>computers</div>
-                    </li>
-                    <li class="clearfix muted">
-                      <div>tv audio</div>
-                    </li>
-                    <li class="clearfix muted">
-                      <div>video games</div>
-                    </li>
-                    <li class="clearfix">
-                      <div>home</div>
-                      <img src="./images/openicon.png" alt="open icon" />
-                    </li>
-                    <li class="clearfix">
-                      <div>sale</div>
-                      <img src="./images/openicon.png" alt="open icon" />
-                    </li>
-                  </ul>
-                </div>
-                <div class="sidebar-second">
-                  <div class="sidebar-card">
-                    <div class="heading clearfix">
-                      <div>available</div>
-                    </div>
-
-                    <div class="content">
-                      <ul>
-                        <li class="clearfix">
-                          <label class="container-radio">
-                            <input
-                              type="radio"
-                              checked="checked"
-                              name="radio"
-                            />
-                            <span class="checkmark-radio"></span>
-                          </label>
-                          <div class="sidebar-capiton-text">In storage</div>
-                          <span>45</span>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-radio">
-                            <input
-                              type="radio"
-                              checked="checked"
-                              name="radio"
-                            />
-                            <span class="checkmark-radio"></span>
-                          </label>
-                          <div class="sidebar-capiton-text">In online-shop</div>
-                          <span>12</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <img
-                      src="./images/available-divider.png"
-                      alt="available-divider"
-                    />
-                  </div>
-                  <div class="sidebar-card clearfix">
-                    <div class="heading clearfix">
-                      <div class="sidebar-capiton-text-heading">brands</div>
-                      <span> <a href="#">all</a> </span>
-                    </div>
-
-                    <div class="content">
-                      <ul>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">apple</div>
-                            <span>32</span> <span class="checkmark"></span>
-                          </label>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">apple</div>
-                            <span>32</span> <span class="checkmark"></span>
-                          </label>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">apple</div>
-                            <span>32</span> <span class="checkmark"></span>
-                          </label>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">apple</div>
-                            <span>32</span> <span class="checkmark"></span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="sidebar-third">
-                  <div class="sidebar-card clearfix">
-                    <div class="heading clearfix">
-                      <div class="sidebar-capiton-text-heading">condition</div>
-                      <span> <a href="#">see all</a> </span>
-                    </div>
-
-                    <div class="content">
-                      <ul>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">new</div>
-                            <span class="checkmark"></span>
-                          </label>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">new</div>
-                            <span class="checkmark"></span>
-                          </label>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">new</div>
-                            <span class="checkmark"></span>
-                          </label>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">new</div>
-                            <span class="checkmark"></span>
-                          </label>
-                        </li>
-                        <li class="clearfix">
-                          <label class="container-checkbox">
-                            <input type="checkbox" />
-                            <div class="sidebar-capiton-text">new</div>
-                            <span class="checkmark"></span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="sidebar-last">
-                  <div class="sidebar-card">
-                    <div class="heading"><div>Delivery options</div></div>
-
-                    <div class="content clearfix">
-                      <ul>
-                        <li class="free">
-                          <label class="container-radio">
-                            <div class="sidebar-capiton-text">free</div>
-                            <input
-                              type="radio"
-                              checked="checked"
-                              name="radio"
-                            />
-                            <span class="checkmark-radio"></span>
-                          </label>
-                        </li>
-
-                        <li class="paid">
-                          <label class="container-radio">
-                            <div class="sidebar-capiton-text">$4.99</div>
-                            <input
-                              type="radio"
-                              checked="checked"
-                              name="radio"
-                            />
-                            <span class="checkmark-radio"></span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- body main content -->
-              <div class="main-content clearfix">
-                <div class="box">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="rectangle">
-                  <div class="top-price">$3.99</div>
-                  <div class="box-image">
-                    <img src="./images/jblspeaker.png" alt="product" />
-                  </div>
-                  <div class="rectangle-content clearfix">
-                    <div class="item-name">
-                      <p>Beaine</p>
-                      <span>green</span>
-                    </div>
-                    <div class="rectangle-item-info">
-                      <ul>
-                        <li>16 gb</li>
-                        <li>buy now</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="box after-rect">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box after-rect">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box after-rect">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box after-rect">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box after-rect">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="box after-rect">
-                  <div class="box-image">
-                    <img src="./images/product1.png" alt="product" />
-                  </div>
-                  <div class="prod-info">
-                    <div class="best-items-content">
-                      <div class="item-name">
-                        <p>Apple TV 32GB</p>
-                        <span>black</span>
-                      </div>
-                      <div class="price"><p>$49.99</p></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- pagination -->
-          <div class="pagination clearfix">
-            <div class="previous-page">
-              <a href="#">
-                <img src="./images/prev.png" alt="pagination previous" />
+                  /> -->
+                <i class="fas fa-shopping-cart shopping-cart"></i>
+                Cart <span>0</span>
               </a>
-            </div>
-            <div class="pagination-list">
+            </li>
+            <li><a href="#" class="signin-btn">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header bottom navigation -->
+  <div class="bottom-nav navigation-wrapper clearfix">
+    <div class="navigation">
+      <ul>
+        <li><a href="#"> top sales </a></li>
+        <li><a href="#"> brand focus </a></li>
+        <li class="active"><a href="#"> hi-tech </a></li>
+        <li><a href="#"> best sellers </a></li>
+        <li><a href="#"> projects </a></li>
+      </ul>
+    </div>
+    <div class="search-wrapper">
+      <ul>
+        <li><a href="#"> support </a></li>
+        <li>
+          <a href="#">
+            <!-- <img src="./images/Search Icon.png" alt="search icon" /> -->
+            <i class="fas fa-search"></i>
+          </a>
+          <input type="text" placeholder="I'm looking for.." />
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- slider -->
+  <div id="slider-main" class="slider-main">
+    <div id="slider-container" class="slider-container">
+      <div id="slider-image-container" class="slider-image-container">
+        <div class="slide-items">
+          <div class="back-image-carousel">
+            <img src="./images/iphone.png" class="carousel-image" alt="iphoneimage" />
+          </div>
+          <div class="slider-caption">
+            <h1>Iphone 6 32 Gb Black</h1>
+            <p>
+              At first, for some time, I was not able to answer him one word;
+              but as he had taken me in his arms I held fast by him, or I
+              should have fallen to the ground.
+            </p>
+            <button>buy now</button>
+          </div>
+        </div>
+        <div class="slide-items">
+          <img src="./images/iphoneX.png" class="carousel-image" alt="iphoneXimage" />
+          <div class="slider-caption">
+            <h1>Iphone X 16 Gb Black</h1>
+            <p>
+              At first, for some time, I was not able to answer him one word;
+              but as he had taken me in his arms I held fast by him, or I
+              should have fallen to the ground.
+            </p>
+            <button>buy now</button>
+          </div>
+        </div>
+        <div class="slide-items">
+          <img src="./images/iphone5s.png" class="carousel-image" alt="iphone5simage" />
+          <div class="slider-caption">
+            <h1>Iphone 6 32 Gb Black</h1>
+            <p>
+              At first, for some time, I was not able to answer him one word;
+              but as he had taken me in his arms I held fast by him, or I
+              should have fallen to the ground.
+            </p>
+            <button>buy now</button>
+          </div>
+        </div>
+        <div class="slide-items">
+          <img src="./images/iphoneX.png" class="carousel-image" alt="iphoneXimage" />
+          <div class="slider-caption">
+            <h1>Iphone 6 32 Gb Black</h1>
+            <p>
+              At first, for some time, I was not able to answer him one word;
+              but as he had taken me in his arms I held fast by him, or I
+              should have fallen to the ground.
+            </p>
+            <button>buy now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-next previous-carousel" id="previous">
+      <img src="./images/Previous.png" alt="previous" />
+    </div>
+    <div class="carousel-next" id="next">
+      <img src="./images/Next Icon.png" alt="next" />
+    </div>
+    <div class="dots-container">
+      <ul>
+        <li class="dots"></li>
+        <li class="dots"></li>
+        <li class="dots"></li>
+        <li class="dots"></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- main content -->
+  <div class="main-wrapper">
+    <div class="body-wrapper">
+      <div class="container">
+        <div class="main-content-wrapper">
+          <!-- body navigation -->
+          <div class="body-nav clearfix">
+            <div class="sort-by">
               <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li class="current-page"><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
+                <li>sort by:</li>
+                <li>
+                  <!-- best match
+                  <img src="./images/Open Icon.png" alt="open icon" /> -->
+                  <select name="BEST MATCH" id="">
+                    <option value="volvo">Best Match</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </li>
               </ul>
             </div>
-            <div class="next-page">
+            <div class="nav-middle">
+              <ul>
+                <li>
+                  <span>keywords</span>
+                  <input type="text" class="lg-input" placeholder="TABLET" />
+                </li>
+                <li>
+                  <span>price</span>
+                  <input type="text" class="sm-input" placeholder="10" />
+                  <span>-</span>
+                  <input type="text" class="sm-input" placeholder="1000" />
+                </li>
+                <li>
+                  <label class="container-checkbox">free Shipping <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="ship-to">
+              <ul>
+                <li>ship to:</li>
+                <li>
+                  usa <img src="./images/Open Icon.png" alt="open icon" />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- body content -->
+          <div class="body-conetnt clearfix">
+            <!-- sidebar -->
+            <div class="sidebar">
+              <div class="sidebar-content sidebar-first">
+                <ul>
+                  <li class="clearfix">
+                    <span>top sales</span>
+                    <img src="./images/openicon.png" alt="open icon" />
+                  </li>
+                  <li class="clearfix">
+                    <span>brand focus</span>
+                    <img src="./images/openicon.png" alt="open icon" />
+                  </li>
+                  <li class="list-with-children clearfix">
+                    <span>hi-tech</span>
+                    <img src="./images/Open Icon.png" alt="open icon" />
+                    <ul class="sidebar-list-childrens">
+                      <li class="clearfix child-list">
+                        <span>cell phones</span>
+                      </li>
+                      <li class="clearfix child-list">
+                        <span>cameras</span>
+                      </li>
+                      <li class="clearfix child-list">
+                        <span>computers</span>
+                      </li>
+                      <li class="clearfix child-list">
+                        <span>tv audio</span>
+                      </li>
+                      <li class="clearfix child-list">
+                        <span>video games</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="clearfix">
+                    <span>home</span>
+                    <img src="./images/openicon.png" alt="open icon" />
+                  </li>
+                  <li class="clearfix">
+                    <span>sale</span>
+                    <img src="./images/openicon.png" alt="open icon" />
+                  </li>
+                </ul>
+              </div>
+              <div class="sidebar-content sidebar-second">
+                <div class="sidebar-card">
+                  <div class="heading clearfix">
+                    <h3>available</h3>
+                  </div>
+
+                  <div class="content">
+                    <ul>
+                      <li class="clearfix">
+                        <label class="container-radio">
+                          <input type="radio" checked="checked" name="radio" />
+                          <span class="checkmark-radio"></span>
+                        </label>
+                        <div class="sidebar-capiton-text">In storage</div>
+                        <span>45</span>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-radio">
+                          <input type="radio" checked="checked" name="radio" />
+                          <span class="checkmark-radio"></span>
+                        </label>
+                        <div class="sidebar-capiton-text">In online-shop</div>
+                        <span>12</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <img src="./images/available-divider.png" alt="available-divider" />
+                </div>
+                <div class="sidebar-card clearfix">
+                  <div class="heading clearfix">
+                    <!-- <div class="sidebar-capiton-text-heading">brands</div> -->
+                    <h3 class="sidebar-capiton-text-heading">brands</h3>
+                    <span> <a href="#">all</a> </span>
+                  </div>
+
+                  <div class="content">
+                    <ul>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">apple</div>
+                          <span>32</span> <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">apple</div>
+                          <span>32</span> <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">apple</div>
+                          <span>32</span> <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">apple</div>
+                          <span>32</span> <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-content">
+                <div class="sidebar-card clearfix">
+                  <div class="heading clearfix">
+                    <div class="sidebar-capiton-text-heading">condition</div>
+                    <span> <a href="#">see all</a> </span>
+                  </div>
+
+                  <div class="content">
+                    <ul>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">new</div>
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">new</div>
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">new</div>
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">new</div>
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                      <li class="clearfix">
+                        <label class="container-checkbox">
+                          <input type="checkbox" />
+                          <div class="sidebar-capiton-text">new</div>
+                          <span class="checkmark"></span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-content sidebar-last">
+                <div class="sidebar-card">
+                  <!-- <div class="heading"><div>Delivery options</div></div> -->
+                  <h3 class="heading">Delivery options<h3>
+                      <div class="content clearfix">
+                        <ul>
+                          <li class="free">
+                            <label class="container-radio">
+                              <div class="sidebar-capiton-text">free</div>
+                              <input type="radio" checked="checked" name="radio" />
+                              <span class="checkmark-radio"></span>
+                            </label>
+                          </li>
+
+                          <li class="paid">
+                            <label class="container-radio">
+                              <div class="sidebar-capiton-text">$4.99</div>
+                              <input type="radio" checked="checked" name="radio" />
+                              <span class="checkmark-radio"></span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- body main content -->
+            <div class="main-content clearfix">
+              <div class="box">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rectangle">
+                <div class="top-price">$3.99</div>
+                <div class="box-image">
+                  <img src="./images/jblspeaker.png" alt="product" />
+                </div>
+                <div class="rectangle-content clearfix">
+                  <div class="item-name">
+                    <p>Beaine</p>
+                    <span>green</span>
+                  </div>
+                  <div class="rectangle-item-info">
+                    <ul>
+                      <li>16 gb</li>
+                      <li><button class="buy-now-button">buy now</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="box after-rect">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box after-rect">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box after-rect">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box after-rect">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box after-rect">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box after-rect">
+                <div class="box-image">
+                  <img src="./images/product1.png" alt="product" />
+                </div>
+                <div class="prod-info">
+                  <div class="best-items-content">
+                    <div class="item-name">
+                      <p>Apple TV 32GB</p>
+                      <span>black</span>
+                    </div>
+                    <div class="price">
+                      <p>$49.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- pagination -->
+        <div class="pagination clearfix">
+          <div class="previous-page">
+            <a href="#">
+              <img src="./images/prev.png" alt="pagination previous" />
+            </a>
+          </div>
+          <div class="pagination-list">
+            <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li class="current-page"><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+            </ul>
+          </div>
+          <div class="next-page">
+            <a href="#">
+              <img src="./images/next.png" alt="pagination next" />
+            </a>
+          </div>
+        </div>
+
+        <!-- best sellers -->
+        <div class="best-seller clearfix">
+          <div class="best-seller-header">
+            <h3>best sellers</h3>
+          </div>
+          <div class="best-seller-item clearfix">
+            <div class="best-items">
               <a href="#">
-                <img src="./images/next.png" alt="pagination next" />
+                <div class="best-items-image">
+                  <img src="./images/bestproduct1.jpg" alt="best product" />
+                </div>
+                <div class="best-items-content">
+                  <div class="item-name">
+                    <p>Beaine</p>
+                    <span>green</span>
+                  </div>
+                  <div class="price">
+                    <p><span> $39.99</span> $29.99</p>
+                  </div>
               </a>
             </div>
           </div>
-
-          <!-- best sellers -->
-          <div class="best-seller clearfix">
-            <div class="best-seller-header"><h3>best sellers</h3></div>
-            <div class="best-seller-item clearfix">
-              <div class="best-items">
-               <a href="#">
-                  <div class="best-items-image">
-                    <img src="./images/bestproduct1.jpg" alt="best product" />
-                  </div>
-                  <div class="best-items-content">
-                    <div class="item-name">
-                      <p>Beaine</p>
-                      <span>green</span>
-                    </div>
-                    <div class="price">
-                      <p><span> $39.99</span> $29.99</p>
-                    </div>
-               </a>
-                </div>
+          <div class="best-items">
+            <a href="#">
+              <div class="best-items-image">
+                <img src="./images/bestproduct1.jpg" alt="best product" />
               </div>
-              <div class="best-items">
-                <a href="#">
-                  <div class="best-items-image">
-                    <img src="./images/bestproduct1.jpg" alt="best product" />
-                  </div>
-                  <div class="best-items-content">
-                    <div class="item-name">
-                      <p>T-Shirt With a Print</p>
-                      <span>dark blue</span>
-                    </div>
-                    <div class="price">
-                      <p><span> $29.99</span> $19.99</p>
-                    </div>
-                </a>
+              <div class="best-items-content">
+                <div class="item-name">
+                  <p>T-Shirt With a Print</p>
+                  <span>dark blue</span>
                 </div>
-              </div>
-              <div class="best-items">
-                <a href="#">
-                  <div class="best-items-image">
-                    <img src="./images/bestproduct1.jpg" alt="best product" />
-                  </div>
-                  <div class="best-items-content">
-                    <div class="item-name">
-                      <p>Pile-Lined Hooded Jacket</p>
-                      <span>dark blue</span>
-                    </div>
-                    <div class="price">
-                      <p><span> $49.99</span> $39.99</p>
-                    </div>
-                </a>
+                <div class="price">
+                  <p><span> $29.99</span> $19.99</p>
                 </div>
-              </div>
-              <div class="best-items">
-                <a href="#">
-                  <div class="best-items-image">
-                    <img src="./images/bestproduct1.jpg" alt="best product" />
-                  </div>
-                  <div class="best-items-content">
-                    <div class="item-name">
-                      <p>Trainers</p>
-                      <span>space grey</span>
-                    </div>
-                    <div class="price">
-                      <p><span> $39.99</span> $29.99</p>
-                    </div>
-                </a>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
+        <div class="best-items">
+          <a href="#">
+            <div class="best-items-image">
+              <img src="./images/bestproduct1.jpg" alt="best product" />
+            </div>
+            <div class="best-items-content">
+              <div class="item-name">
+                <p>Pile-Lined Hooded Jacket</p>
+                <span>dark blue</span>
+              </div>
+              <div class="price">
+                <p><span> $49.99</span> $39.99</p>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div class="best-items">
+        <a href="#">
+          <div class="best-items-image">
+            <img src="./images/bestproduct1.jpg" alt="best product" />
+          </div>
+          <div class="best-items-content">
+            <div class="item-name">
+              <p>Trainers</p>
+              <span>space grey</span>
+            </div>
+            <div class="price">
+              <p><span> $39.99</span> $29.99</p>
+            </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 
-        <!-- feedback section -->
-        <div class="feedback-section">
-          <div class="container">
-            <div class="feedback-header">
-              <h2>What Our Customers Have to Say</h2>
-              <p>Couple of Words About This Stories Section</p>
+  <!-- feedback section -->
+  <div class="feedback-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Have to Say</h2>
+        <p>Couple of Words About This Stories Section</p>
+      </div>
+      <div class="feedback-content clearfix">
+        <div class="feedbacks">
+          <a href="#">
+            <div class="name">
+              <p>celia fields</p>
+              <span>founder</span>
             </div>
-            <div class="feedback-content clearfix">
-              <div class="feedbacks">
-                <a href="#">
-                  <div class="name">
-                    <p>celia fields</p>
-                    <span>founder</span>
-                  </div>
-                </a>
-                <div class="review">
-                  <p>
-                    This I have produced as a scantling of Jack’s great
-                    eloquence and the force of his reasoning upon such abstruse
-                    matters.
-                  </p>
-                </div>
-              </div>
-              <div class="feedbacks">
-                <a href="#">
-                  <div class="name">
-                    <p>celia fields</p>
-                    <span>founder</span>
-                  </div>
-                </a>
-                <div class="review">
-                  <p>
-                    Looking cautiously round, to ascertain that they were not
-                    overheard, the two hags cowered nearer to the fire, and
-                    chuckled heartily.
-                  </p>
-                </div>
-              </div>
-              <div class="feedbacks">
-                <a href="#">
-                  <div class="name">
-                    <p>celia fields</p>
-                    <span>founder</span>
-                  </div>
-                </a>
-                <div class="review">
-                  <p>
-                    This sounded a very good reason, and Alice was quite pleased
-                    to know it. 'I never thought of that before!' she said.
-                  </p>
-                </div>
-              </div>
-            </div>
+          </a>
+          <div class="review">
+            <p>
+              This I have produced as a scantling of Jack’s great
+              eloquence and the force of his reasoning upon such abstruse
+              matters.
+            </p>
           </div>
         </div>
-
-        <!-- footer section -->
-        <div class="footer">
-          <div class="container">
-            <div class="footer-top clearfix">
-              <div class="footer-logo">
-                <a href="#">
-                  <img src="./images/footerlogo.png" alt="footer logo" />
-                </a>
-              </div>
-              <div class="footer-nav">
-                <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">contacts</a></li>
-                </ul>
-              </div>
-              <div class="footer-icon clearfix">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <img src="./images/Twitter Icon.png" alt="Twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./images/Facebook Icon.png" alt="Facebook" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./images/G+ Icon.png" alt="google" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
+        <div class="feedbacks">
+          <a href="#">
+            <div class="name">
+              <p>celia fields</p>
+              <span>founder</span>
             </div>
-
-            <div class="footer-bottom clearfix">
-              <div class="footer-bottom-left">
-                <p>
-                  She gave my mother such a turn, that I have always been
-                  convinced I am indebted to Miss Betsey for having been born on
-                  a Friday.
-                </p>
-              </div>
-              <div class="footer-bottom-right">
-                <ul>
-                  <li><a href="#">privacy policy</a></li>
-                  <li><a href="#">terms and conditons</a></li>
-                </ul>
-              </div>
+          </a>
+          <div class="review">
+            <p>
+              Looking cautiously round, to ascertain that they were not
+              overheard, the two hags cowered nearer to the fire, and
+              chuckled heartily.
+            </p>
+          </div>
+        </div>
+        <div class="feedbacks">
+          <a href="#">
+            <div class="name">
+              <p>celia fields</p>
+              <span>founder</span>
             </div>
+          </a>
+          <div class="review">
+            <p>
+              This sounded a very good reason, and Alice was quite pleased
+              to know it. 'I never thought of that before!' she said.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="./js/slider.js"></script>
-    <script src="./js/script.js"></script>
-  </body>
+  <!-- footer section -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-top clearfix">
+        <div class="footer-logo">
+          <a href="#">
+            <img src="./images/footerlogo.png" alt="footer logo" />
+          </a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">contacts</a></li>
+          </ul>
+        </div>
+        <div class="social-icons clearfix">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="./images/Twitter Icon.png" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/Facebook Icon.png" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/G+ Icon.png" alt="google" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom clearfix">
+        <div class="footer-bottom-left">
+          <p>
+            She gave my mother such a turn, that I have always been
+            convinced I am indebted to Miss Betsey for having been born on
+            a Friday.
+          </p>
+        </div>
+        <div class="footer-bottom-right">
+          <ul>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">terms and conditons</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="./js/slider.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

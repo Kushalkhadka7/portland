@@ -4,10 +4,11 @@
 }
 
 .container {
-  padding: 0 15px;
   width: 100%;
+  margin: 0 auto;
 }
-.spacing {
+
+.header-nav-container{
   padding: 0 15px;
   width: 100%;
   border-bottom: 1px solid #ddd;
@@ -61,7 +62,7 @@ css for header
   border-bottom: none;
 }
 
-.left-nav {
+.brand {
   float: left;
   width: 100%;
   display: block;
@@ -69,6 +70,7 @@ css for header
 }
 
 .hamburger-menu {
+  font-size: 22px;
   margin-bottom: 5px;
   cursor: pointer;
 }
@@ -113,6 +115,10 @@ css for header
   background-color: #eee;
   padding: 3px 7px;
   border-radius: 50%;
+}
+
+.shopping-cart{
+	color:#343e5c;
 }
 
 .signin-btn {
@@ -175,7 +181,7 @@ css for header
 
 .search-wrapper ul li a {
   text-decoration: none;
-  color: #000;
+  color: #bdc2d4;
 }
 
 .search-wrapper ul li:first-child {
@@ -265,7 +271,7 @@ css for slider
   list-style-type: none;
   display: inline-block;
 }
-.mySlides {
+.slide-items {
   width: 1400px;
   float: left;
 }
@@ -362,6 +368,26 @@ css for body
   width: 100%;
   text-align: center;
 }
+
+/* select{
+  border: 0;
+  text-transform: unset;
+  font-size: 13px;
+  font-weight: 600;
+  color: #343e5c;
+  background: url(../images/dropdown.png) no-repeat right #ddd;
+  /* -webkit-appearance: none; */
+  /* background-position-x: 244px; */
+/*  */
+
+
+/* select{
+  line-height: 1;
+  border: 0;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-x: 40%;
+} */
 
 .nav-middle {
   width: 100%;
@@ -543,31 +569,48 @@ css for body
   font-weight: 500;
 }
 
-.sidebar-top,
-.sidebar-third {
+.sidebar-content{
   background: #fff;
   border-radius: 5px;
 }
 
-.sidebar-top ul li {
-  padding: 15px;
+.sidebar-first ul li span{
+	padding: 0 15px;
+}
+
+.sidebar-content ul li {
+  padding: 15px 0; 
   text-transform: capitalize;
   border-bottom: 1px solid #f0f2f7;
   position: relative;
   font-size: 13px;
   font-weight: 500;
 }
-.sidebar-top ul li.muted {
+
+.list-with-children{
+ padding-bottom: 0 !important;
+}
+
+/* .sidebar-content ul li span{
+	padding:0 0 0 15px;
+} */
+.sidebar-content ul li.child-list {
+	padding: 15px 0;
   background-color: #f0f2f7;
   color: #a1a7bd;
   border-bottom: 1px solid #dfe4ee;
 }
 
-.sidebar-top ul li:last-child {
-  border-bottom: none;
+.sidebar-list-childrens{
+  margin-top: 15px;
 }
 
-.sidebar-top ul li:hover {
+.sidebar-content ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 15px;
+}
+
+.sidebar-content ul li:hover {
   background-color: #f0f2f7;
   cursor: pointer;
 }
@@ -575,8 +618,6 @@ css for body
 .sidebar-second,
 .sidebar-last {
   margin: 20px 0;
-  background: #fff;
-  border-radius: 5px;
 }
 
 .sidebar-card .heading {
@@ -647,19 +688,16 @@ css for body
 }
 
 .sidebar ul li img {
+  padding-top: 4px;
   position: absolute;
   right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .sidebar .heading span a {
   color: #2754eb;
 }
 
-.sidebar-second img,
-.sidebar-third img,
-.sidebar-last img {
+.sidebar-content {
   width: 100%;
 }
 
@@ -681,6 +719,7 @@ css for body
   padding: 30px;
   border-radius: 5px;
 }
+
 .box:hover {
   background-blend-mode: lighten;
   cursor: pointer;
@@ -766,6 +805,14 @@ css for body
   width: 50%;
 }
 
+.buy-now-button{
+	border: 0;
+    background: #fff;
+	text-transform: uppercase;
+	color:#5e6379;
+	font-weight: 600;
+}
+
 .rectangle-info ul li {
   display: inline;
   padding-left: 20px;
@@ -783,6 +830,8 @@ css for body
   text-transform: uppercase;
   padding: 4px;
   font-size: 11px;
+  font-weight: 600;
+  color:#5e6379;
 }
 
 .rectangle-item-info ul li:last-child:hover {
@@ -812,7 +861,7 @@ css for pagination
 
 .pagination {
   background: #fff;
-  padding: 15px;
+  /* padding: 15px; */
   line-height: 35px;
   font-weight: 500;
   border-radius: 5px;
@@ -827,19 +876,35 @@ css for pagination
   width: 10%;
 }
 
+.previous-page,.next-page{
+  padding: 15px 0;
+}
+
 .previous-page img:hover,
 .next-page img:hover {
   cursor: pointer;
 }
+
 .pagination-list {
   text-align: center;
   width: 80%;
+  border-right: 1px solid #f0f2f7;
+  border-left: 1px solid #f0f2f7;
+}
+
+.pagination-list ul{
+  padding: 15px 0px;
 }
 
 .pagination-list ul li {
   display: inline-block;
   padding: 0 15px;
 }
+
+.pagination-list ul li:last-child{
+  display: none;
+}
+
 .pagination-list ul li a:hover {
   color: #ccc;
   cursor: pointer;
@@ -847,9 +912,12 @@ css for pagination
 
 .pagination-list ul li.current-page {
   border-radius: 50%;
-  color: #cccccc;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 9px 32px 2px rgba(60, 60, 60, 0.62);
+}
+
+.pagination-list ul li.current-page a{
+	color: #b9bed1;
 }
 
 .next-page {
@@ -893,13 +961,13 @@ css for feedback section
   padding: 30px 0;
 }
 
-.feedback-header h2 {
+.section-header h2 {
   font-size: 24px;
   font-weight: 800;
   line-height: 36px;
 }
 
-.feedback-header p {
+.section-header p {
   font-family: 'Crimson Text', serif;
   font-weight: 600;
   font-size: 16px;
@@ -928,7 +996,8 @@ css for feedback section
 
 .name p {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  color: #3a405b;
   font-size: 14px;
   position: relative;
   padding-left: 60px;
@@ -995,8 +1064,12 @@ css for footer
   padding: 0 10px;
 }
 
+.footer-nav ul li a{
+	font-size: 11px;
+}
+
 .footer ul li a {
-  color: #8c8a8a;
+  color: #fff;
   text-decoration: none;
 }
 .pagination ul li a {
@@ -1004,7 +1077,7 @@ css for footer
   text-decoration: none;
 }
 
-.footer-icon {
+.social-icons {
   width: 100%;
   text-align: center;
 }
@@ -1024,6 +1097,10 @@ css for footer
   font-size: 16px;
 }
 
+.footer-bottom-left{
+	font-size: 14px;
+}
+
 .footer-bottom-right {
   width: 100%;
   text-align: center;
@@ -1031,7 +1108,7 @@ css for footer
   text-transform: uppercase;
 }
 
-.footer-icon ul li,
+.social-icons ul li,
 .footer-bottom-right ul li {
   display: inline-block;
   padding-left: 15px;
@@ -1039,6 +1116,11 @@ css for footer
 
 .footer-bottom-right ul li {
   text-align: right;
+}
+
+.footer-bottom-right ul li a{
+	color:#606165;
+	font-size: 11px;
 }
 
 .footer ul li:hover {
