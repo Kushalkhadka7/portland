@@ -628,6 +628,10 @@ css for body
   border-bottom: 1px solid #f0f2f7;
 }
 
+.sidebar-card img{
+  width: 100%;
+}
+
 .sidebar-card .content {
   padding: 15px;
 }

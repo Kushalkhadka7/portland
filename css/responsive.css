@@ -143,9 +143,9 @@ css for screen larger than tablets
 */
 
 @media screen and (min-width: 768px) {
-  /* .container {
+  .container {
     padding: 0 20px;
-  } */
+  }
   .nav {
     padding: 20px 0;
   }
@@ -371,9 +371,9 @@ css for larger screens
 }
 
 @media screen and (min-width: 992px) {
-  /* .container {
+  .container {
     padding: 0 110px;
-  } */
+  }
   .header-nav-container{
     border-bottom: none;
   }
